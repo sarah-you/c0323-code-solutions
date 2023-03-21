@@ -5,13 +5,13 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What are arrays used for?
-to tore list or set of values without knowing how many values will be added;
+to store list or set of values without knowing how many values will be added;
 
 - Describe array literal notation.
 give a variable a name to name the array, followed by the assignment operator and a opening and closing square bracket which contains the list of values that are separated by commas;
 
 - How are arrays different from "plain" objects?
-they hold sets of key/value pairs, but rather than accessing them using the preoperty name, arrays use index numbers;
+they hold sets of key/value pairs, but rather than accessing them using the property name, arrays use index numbers;
 meaning, order may not matter for objects, but index numbers in an array specifies the order of the properties;
 
 - What number represents the first index of an array?
