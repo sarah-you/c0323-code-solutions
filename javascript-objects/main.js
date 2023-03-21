@@ -4,9 +4,9 @@ const student = {
   age: 26
 };
 
-student.fullName = student.firstName + student.lastName;
+const fullName = student.firstName + student.lastName;
 
-console.log('fullname: ', student.fullName);
+console.log('fullname: ', fullName);
 
 student.livesInIrvine = true;
 student.previousOccupation = 'marketing assistant';
