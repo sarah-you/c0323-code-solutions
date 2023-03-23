@@ -14,7 +14,7 @@ limits the loop on how many times to run;
 each time loop runs;
 
 - _When_ does the **condition** expression of a `while` loop get evaluated?
-beginning;
+beginning of each iteration;
 
 - _When_ does the **initialization** expression of a `for` loop get evaluated?
 once in the beginning, before the condition;
