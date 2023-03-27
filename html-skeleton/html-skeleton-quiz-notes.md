@@ -5,10 +5,10 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - Where do you put non-visible content about the HTML document?
-<head> section;
+between <head> tags;
 
 - Where do you put visible content about the HTML document?
-<body> section;
+between <body> tags;
 
 - Where do the `<head>` and `<body>` tags go in a valid HTML document?
 between opening <html> and closing </html> tags;
