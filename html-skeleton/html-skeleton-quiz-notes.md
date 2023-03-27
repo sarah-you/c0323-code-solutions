@@ -5,12 +5,16 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - Where do you put non-visible content about the HTML document?
+<head> section;
 
 - Where do you put visible content about the HTML document?
+<body> section;
 
 - Where do the `<head>` and `<body>` tags go in a valid HTML document?
+between opening <html> and closing </html> tags;
 
 - What is the purpose of a `<!DOCTYPE>` declaration?
+tells browser which version of HTML is being used on the web page;
 
 ## Notes
 
