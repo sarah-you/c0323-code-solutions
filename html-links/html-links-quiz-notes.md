@@ -8,10 +8,10 @@ After completing this exercise, you should be able to discuss or answer the foll
 <a> tag with href attribute with URL value;
 
 - What is an absolute URL?
-full web address for a site;
+full web address for a site; links to external website;
 
 - What is a relative URL?
-shorthand of absolute URL in which you do not have to specify domain name (website name);
+shorthand of absolute URL in which you do not have to specify domain name (website name); links to internal local files;
 
 ## Notes
 
