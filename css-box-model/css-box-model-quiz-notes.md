@@ -5,7 +5,7 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What CSS properties make up the box model?
-width, height, border, margin, padding;
+border, margin, padding;
 
 - Which CSS property pushes boxes away from each other?
 margin;
