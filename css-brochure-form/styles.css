@@ -1,0 +1,51 @@
+header {
+  text-align: center;
+}
+
+body {
+  text-transform: uppercase;
+  font-family: "Brandon Grotesque", sans-serif;
+}
+
+h2 {
+  font-size: 22px;
+  color: #ec5c57;
+  text-align: center;
+}
+
+.labels {
+  font-size: 10px;
+  text-align: left;
+  line-height: 2em;
+  padding: 10px;
+}
+
+select,
+input {
+  padding: 10px 5px;
+  border-radius: 5px;
+  margin: 1px;
+  width: 350px;
+  border-color: gray;
+  text-align: left;
+  font-size: 15px;
+}
+
+select {
+  background-color: #f3f3f3;
+  padding: 5;
+  font-size: 12px;
+  letter-spacing: 0.02rem;
+}
+
+button {
+  background-color: #ec5c57;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 5px;
+  width: 90px;
+  height: 30px;
+  font-size: 12px;
+}
