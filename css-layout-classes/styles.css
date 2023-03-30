@@ -1,0 +1,31 @@
+.container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: sans-serif;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+}
+
+.column-one-third {
+  flex-basis: calc(100%/3);
+}
+
+.column-one-third img {
+  width: 100%;
+}
+
+.column-one-fourth {
+  flex-basis: calc(100%/4);
+}
+
+.column-one-fourth img {
+  width: 100%;
+}
+
+.column-two-third {
+  flex-basis: calc(2 *(100%/3));
+}
