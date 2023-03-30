@@ -1,0 +1,26 @@
+.container {
+  background-color: #1a96d9;
+  color: white;
+  flex-direction: row;
+  font-family: Lato, sans-serif;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.circle img {
+  width: 100%/3;
+}
+
+.col-one-third {
+  flex-basis: calc(100%/3);
+}
+
+.circle {
+  background-color: white;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
