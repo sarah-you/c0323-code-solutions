@@ -1,0 +1,54 @@
+.container {
+  color: white;
+  flex-direction: row;
+  font-family: Lato, sans-serif;
+  justify-content: center;
+  margin: auto;
+  width: 1200px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.circle img {
+  width: 50%;
+}
+
+.col-one-third {
+  flex-basis: calc(100%/3);
+  text-align: center;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+}
+
+body {
+  background-color: #1a96d9;
+}
+
+.description-wrapper {
+  width: 280px;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.line-height-onefive {
+  line-height: 1.5rem;
+}
+
+h1 {
+  line-height: 80px;
+}
