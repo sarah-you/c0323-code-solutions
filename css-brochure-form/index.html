@@ -14,25 +14,35 @@
     <h2>Learn More</h2>
   </header>
   <form>
-    <label class="labels" id="one">
-      Company Email <br>
-      <input type="text" name="email" placeholder="sally@company.co"><br>
+    <div class="text" id="email">
+      Company Email
+    </div>
+    <label class="text">
+      <input type="text" name="email" placeholder="sally@company.co">
     </label>
-    <label class="labels" id="two">
-      Name <br>
-      <input type="text" name="name" placeholder="Sally Smith"><br>
+    <div class="text" id="name">
+      Name
+    </div>
+    <label class="text">
+      <input type="text" name="name" placeholder="Sally Smith">
     </label>
-    <label class="labels" id="three">
-      Where Are You Hiring? <br>
-      <input type="text" name="location" placeholder="City,Country"><br>
+    <div class="text" id="location">
+      Where Are You Hiring?
+    </div>
+    <label class="text">
+      <input type="text" name="location" placeholder="City,Country">
     </label>
-    <label class="labels" id="four">
-      How Many Engineers Are You Hiring in the Next 6 Months?<br>
+    <div class="dropdown" id="hiring">
+      How Many Engineers Are You Hiring in the Next 6 Months?
+    </div>
+    <label class="text">
       <select name="hiring">
         <option>1-2 Engineers</option>
-      </select><br>
-      <button value="submit">Submit</button>
+      </select>
     </label>
+    <div class="text">
+      <button value="submit">Submit</button>
+    </div>
   </form>
 </body>
 </html>
