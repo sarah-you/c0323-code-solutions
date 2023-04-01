@@ -6,35 +6,55 @@
   <body>
     <h1> Coding Form!</h1>
     <form>
-      <label>
+      <div class="section">
         Email
-        <input type="text" name="email"/><br>
-      </label>
-      <label>
+        <label>
+          <input type="text" name="email"/>
+        </label>
+      </div>
+      <div class="section">
         Why is Coding cool?<br>
         <select name="dropdown">
           <option value="select an option">Select an option</option>
           <option value="because it's interesting">Because it's interesting</option>
           <option value="because it's fun">Because it's fun</option>
           <option value="because it's powerful">Because it's powerful</option>
-        </select><br>
-      </label>
-      <label>
-        Favorite Language (choose one)<br>
-        <input type="radio" name="language" value="HTML"/> HTML
-        <input type="radio" name="language" value="CSS"/> CSS
-        <input type="radio" name="language" value="Javascript"/> JavaScript <br>
-      </label>
-      <label>
-        Would you like to sign up for more information?<br>
-        <input type="checkbox" name="sign-up" value="yes"/>
-        Sign me up!<br>
-      </label>
-      <label>
-        Comments<br>
-        <textarea name="comments" cols="30" rows="10"></textarea><br>
-        <input type="submit" name="submit" value="Submit"/>
-      </label>
+        </select>
+      </div>
+      <div class="section">
+        <div class="text">
+          Favorite Language (choose one)
+        </div>
+        <label>
+          <input type="radio" name="language" value="HTML"/> HTML
+        </label>
+        <label>
+          <input type="radio" name="language" value="CSS"/> CSS
+        </label>
+        <label>
+          <input type="radio" name="language" value="Javascript"/> JavaScript
+        </label>
+      </div>
+      <div class="section">
+        <div class="text">
+          Would you like to sign up for more information?
+        </div>
+        <label>
+          <input type="checkbox" name="sign-up" value="yes"/>
+        </label>
+        Sign me up!
+      </div>
+      <div class="section">
+        <div class="text">
+          Comments
+        </div>
+        <textarea name="comments" cols="30" rows="10"></textarea>
+        <div class="section">
+          <button value="Submit">
+            Submit
+          </button>
+        </div>
+      </div>
     </form>
   </body>
 </html>
