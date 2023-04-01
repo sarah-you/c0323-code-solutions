@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,39 +10,56 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
-    <h2>Learn More</h2>
+    <h2>
+      Learn More
+    </h2>
   </header>
   <form>
-    <div class="text" id="email">
-      Company Email
-    </div>
-    <label class="text">
-      <input type="text" name="email" placeholder="sally@company.co">
-    </label>
-    <div class="text" id="name">
-      Name
-    </div>
-    <label class="text">
-      <input type="text" name="name" placeholder="Sally Smith">
-    </label>
-    <div class="text" id="location">
-      Where Are You Hiring?
-    </div>
-    <label class="text">
-      <input type="text" name="location" placeholder="City,Country">
-    </label>
-    <div class="dropdown" id="hiring">
-      How Many Engineers Are You Hiring in the Next 6 Months?
-    </div>
-    <label class="text">
-      <select name="hiring">
-        <option>1-2 Engineers</option>
-      </select>
-    </label>
-    <div class="text">
-      <button value="submit">Submit</button>
+    <div class="container">
+      <div class="section">
+        Company Email
+        <div class="text">
+          <label>
+            <input type="text" name="email" placeholder="sally@company.co">
+          </label>
+        </div>
+      </div>
+      <div class="section">
+        Name
+        <div class="text">
+          <label>
+            <input type="text" name="name" placeholder="Sally Smith">
+          </label>
+        </div>
+      </div>
+      <div class="section">
+        Where are you hiring?
+        <div class="text">
+          <label>
+            <input type="text" name="location" placeholder="City, Country">
+          </label>
+        </div>
+      </div>
+      <div class="section">
+        How Many Engineers Are You Hiring in the Next 6 Months?
+        <div class="text">
+          <select name="dropdown">
+            <option>
+              1-2 Engineers
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class="section">
+        <div class="text">
+          <button value="submit">
+            Submit
+          </button>
+        </div>
+      </div>
     </div>
   </form>
 </body>
