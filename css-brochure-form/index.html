@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
   <header>
     <h2>
@@ -18,48 +17,28 @@
     </h2>
   </header>
   <form>
-    <div class="container">
-      <div class="section">
-        Company Email
-        <div class="text">
-          <label>
-            <input type="text" name="email" placeholder="sally@company.co">
-          </label>
-        </div>
-      </div>
-      <div class="section">
-        Name
-        <div class="text">
-          <label>
-            <input type="text" name="name" placeholder="Sally Smith">
-          </label>
-        </div>
-      </div>
-      <div class="section">
-        Where are you hiring?
-        <div class="text">
-          <label>
-            <input type="text" name="location" placeholder="City, Country">
-          </label>
-        </div>
-      </div>
-      <div class="section">
-        How Many Engineers Are You Hiring in the Next 6 Months?
-        <div class="text">
-          <select name="dropdown">
-            <option>
-              1-2 Engineers
-            </option>
-          </select>
-        </div>
-      </div>
-      <div class="section">
-        <div class="text">
-          <button value="submit">
-            Submit
-          </button>
-        </div>
-      </div>
+    <div class="section">
+      <label for="email">Company Email</label>
+      <input id="email" type="text" name="email" placeholder="sally@company.co">
+    </div>
+    <div class="section">
+      <label for="name">Name</label>
+      <input id="name" type="text" name="name" placeholder="Sally Smith">
+    </div>
+    <div class="section">
+      <label for="location">Where Are You Hiring?</label>
+      <input id="location" type="text" name="location" placeholder="City, Country">
+    </div>
+    <div class="section">
+      <label>How Many Engineers Are You Hiring in the Next 6 Months?</label>
+      <select class="dropdown">
+        <option>
+          1-2 Engineers
+        </option>
+      </select>
+    </div>
+    <div class="button">
+      <button value="submit">Submit</button>
     </div>
   </form>
 </body>
