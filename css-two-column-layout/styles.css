@@ -1,0 +1,48 @@
+body {
+  font-family: karla, sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-left: 450px;
+  margin-right: 450px;
+}
+
+p {
+  font-size: 10px;
+  color: #707070;
+}
+
+.row {
+  display: flex;
+}
+
+h1,
+h3 {
+  text-transform: uppercase;
+}
+
+button {
+  border-color: #d14c45;
+  color: #d14c45;
+  background-color: white;
+  text-transform: uppercase;
+  padding: 8px 30px;
+  margin: 10px;
+  font-size: 10px;
+  margin-left: 220px;
+}
+
+img {
+  height: 80px;
+}
+
+h3 {
+  font-size: 12px;
+}
+
+.col {
+  margin: 5px;
+}
+
+header {
+  text-align: center;
+}
