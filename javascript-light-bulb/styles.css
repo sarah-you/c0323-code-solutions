@@ -1,0 +1,33 @@
+.off {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.circle-off {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  margin-top: 150%;
+  background-color: gray;
+}
+
+.circle-on {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  margin-top: 150%;
+  background-color: #efef0d;
+}
+
+.on {
+  display: flex;
+  justify-content: center;
+  background-color: #f7f7ec;
+}
