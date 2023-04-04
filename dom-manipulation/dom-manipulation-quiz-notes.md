@@ -15,7 +15,7 @@ then assign that variable.className as the updated class, in string format;
 the text enclosed in an element;
 
 - How do you update the text within an element using JavaScript?
-first assign a varaible to query the DOM for the element that the text is in;
+first assign a variable to query the DOM for the element that the text is in;
 then assign that variable.textContent as the updated text, in string format;
 
 - Is the `event` parameter of an event listener callback always useful?
@@ -25,7 +25,8 @@ no, you don't always need it, but when you are trying to locate a specific event
 it would be more complicated since we wouldn't have a placeholder for a changing number;
 
 - Why is storing information about a program in variables better than only storing it in the DOM?
-save browswer storage  & easier to reference;
+save browser storage  & easier to reference;
+more efficient;
 
 ## Notes
 
