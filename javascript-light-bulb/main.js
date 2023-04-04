@@ -1,16 +1,14 @@
-const $off = document.querySelector('.circle-off');
-const $bodyOff = document.querySelector('.off');
-// const $on = document.querySelector('.circle-on');
-// const $bodyOn = document.querySelector('.on');
+const $circle = document.querySelector('.circle-off');
+const $background = document.querySelector('.off');
 
 function lightsOn(event) {
-  if ($off.className === 'circle-off') {
-    $off.className = 'circle-on';
-    $bodyOff.className = 'on';
-  } else if ($off.className === 'circle-on') {
-    $off.className = 'circle-off';
-    $bodyOff.className = 'off';
+  if ($circle.className === 'circle-off') {
+    $circle.className = 'circle-on';
+    $background.className = 'on';
+  } else if ($circle.className === 'circle-on') {
+    $circle.className = 'circle-off';
+    $background.className = 'off';
   }
 }
 
-$off.addEventListener('click', lightsOn);
+$circle.addEventListener('click', lightsOn);
