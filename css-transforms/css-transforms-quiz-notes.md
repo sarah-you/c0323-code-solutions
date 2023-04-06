@@ -5,9 +5,10 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What does the transform property do?
+lets you roate, scale, skew, or translate an element; make objects move on webpage;
 
 - Give four examples of CSS transform functions.
-
+rotate(), rotateY(), scale(), traslateY();
 
 ## Notes
 
