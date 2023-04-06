@@ -1,0 +1,66 @@
+.container {
+  background-color: white;
+}
+
+.open-modal {
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  background-color: #fcba03;
+  border: solid;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+button {
+  font-family: "Secular One", sans-serif;
+}
+
+.close-modal {
+  width: 75px;
+  height: 35px;
+  font-size: 20px;
+  background-color: #423103;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px #423103;
+}
+
+.hidden-modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.visible-modal {
+  background-color: black;
+  opacity: 0.85;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-wrap {
+  background-color: white;
+  width: 40%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-family: "DM Serif Display", serif;
+  text-align: center;
+  padding: 15px;
+}
