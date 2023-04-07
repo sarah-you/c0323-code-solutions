@@ -7,7 +7,8 @@ After completing this exercise, you should be able to discuss or answer the foll
 - The `transition` property is shorthand for which four CSS properties?
 transition-property, transition-duration, transition-timing-function, and transition-delay;
 
-** ASK: FROM EXERCISE <NOTE: Transitions should be applied in the primary CSS rule for the target elements, not the rule whose selector includes the pseudoclass. Feel free to ask about this during the Q&A!>
+  ** ASK: FROM EXERCISE <NOTE: Transitions should be applied in the primary CSS rule for the target elements, not the rule whose selector includes the pseudoclass. Feel free to ask about this during the Q&A!>
+-- for full transition; if css rule is applied on on hover, the rule is only applied on the hover so the rule stops being applied (no transition) as soon as the mouse is no longer on the element;
 
 ## Notes
 
