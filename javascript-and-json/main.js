@@ -19,13 +19,14 @@ console.log('library: ', library);
 console.log('library type of: ', typeof library);
 
 const libString = JSON.stringify(library);
-console.log('object library to string: ', libString);
+console.log('object to string: ', libString);
 console.log('var libString type of: ', typeof libString);
 
-const co2023 = [
-  {
-    'number Id': '12345'
-  }
-];
+const co2023 = '{ "id": "12345", "name": "cera"}';
+
 console.log('JSON String co2023: ', co2023);
 console.log('co2023 type of: ', typeof co2023);
+
+const classObj = JSON.parse(co2023);
+console.log('string to object: ', classObj);
+console.log('type of: ', typeof classObj);
