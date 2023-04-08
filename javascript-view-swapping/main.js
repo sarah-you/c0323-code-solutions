@@ -10,7 +10,7 @@ function selectTab(event) {
     for (let i = 0; i < $tabList.length; i++) {
       if ($tabList[i] === event.target) {
         $tabList.setAttribute('class', 'tab active');
-      } else {
+      } else if ($tabList[i] !== event.target) {
         $tabList.setAttribute('class', 'tab');
       }
     }
