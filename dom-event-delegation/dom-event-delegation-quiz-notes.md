@@ -5,7 +5,7 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is the `event.target`?
-the element you are adding the event listener to;
+the element that triggered the event;
 
 - Why is it possible to listen for events on one element that actually happen its descendent elements?
 bc of event flow, the event bubbling
