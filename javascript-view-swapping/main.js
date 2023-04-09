@@ -4,16 +4,22 @@ const $tabList = document.querySelectorAll('.tab');
 console.log($tabList);
 const $pageList = document.querySelectorAll('.view');
 console.log($pageList);
-const $tabActive = document.querySelector('.active');
-console.log($tabActive);
 
 function selectTab(event) {
   if (event.target.matches('.tab')) {
     for (let i = 0; i < $tabList.length; i++) {
       if ($tabList[i] === event.target) {
-        event.target.setAttribute('class', 'tab active');
+        $tabList[i].setAttribute('class', 'tab active');
       } else {
-        $tabActive.setAttribute('class', 'tab');
+        $tabList[i].setAttribute('class', 'tab');
+      }
+    }
+    const $content = event.target.getAttribute('data-view');
+    for (let i = 0; i < $pageList.length; i++) {
+      if ($pageList[i].getAttribute('data-view') === $content) {
+        $pageList[i].setAttribute('class', 'view');
+      } else {
+        $pageList[i].setAttribute('class', 'view hidden');
       }
     }
   }
