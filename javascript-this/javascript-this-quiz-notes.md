@@ -5,10 +5,10 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is `this` in JavaScript?
-implicit parameter of all JS functions;
+the calling object; implicit parameter of all JS functions;
 
 - What does it mean to say that `this` is an "implicit parameter"?
-it is available in a function's code block even if it was not defined as a parameter or declared as a variable;
+it is available within a function's code block even if it was not defined as a parameter or declared as a variable;
 
 - _When_ is the value of `this` determined in a function; **call time** or **definition time**?
 call time;
@@ -23,8 +23,7 @@ call time;
       }
     };
     ```
-the firstName property of the character object;
-
+in theory, we don't know until the method is called;
 
 - Given the above `character` object, what is the result of the following code snippet? Why?
     ```js
@@ -37,7 +36,7 @@ the firstName property of the character object;
     const hello = character.greet;
     hello();
     ```
-"It's a-me, undefined" because hello is not part of the character object so "this" will not have the character object as a reference;
+"It's a-me, undefined" because hello is not part of the character object so "this" will not have the character object as a reference, it'll reference the window object and window object doesn't have greet property;
 
 - How can you tell what the value of `this` will be for a particular function or method **definition**?
 you won't know when it is defined;
