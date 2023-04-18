@@ -5,7 +5,7 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is the `event.target`?
-the element that the event listener is triggered from;
+the element that the was interacted with (by the user) to trigger the event;
 
 - What is the affect of setting an element to `display: none`?
 hides the element that has the property display: none;
