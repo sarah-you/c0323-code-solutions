@@ -6,9 +6,11 @@ After completing this exercise, you should be able to discuss or answer the foll
 
 - What are JavaScript classes?
 an abstraction over existing prototypical inheritance mechianism; a "factory" for objects;
+templates for creating instances;
 
 - When would you want to use a class?
 when we want to pass in reusable data to other objects;
+to extend functionality and transform/morph them to multiple different ways;
 
 - How do you declare a class?
 similar to objects or function syntax; write the keyword class, class name and opening/closing curly brace with constructor and methods inside the code block;
