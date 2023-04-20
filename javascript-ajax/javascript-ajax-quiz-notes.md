@@ -17,7 +17,7 @@ XMLHttpRequest (XHR);
 'load' event;
 
 - **Bonus Question**: An `XMLHttpRequest` object has an `addEventListener()` method just like DOM elements. How is it possible that they both share this functionality?
-
+XMLHttpRequest isn't DOM element but it is an event target; they all inherit Event Target prototype because they're both made from Event Target Interface;
 
 ## Notes
 
