@@ -17,13 +17,13 @@ GET;
 HTTP method, request target (URL), and HTTP version;
 
 - What three things are on the start-line of an HTTP **response** message?
-protocol version (HTTP/1.1), status code (success/failure such as code 20, 404, 302), and status text;
+protocol version (HTTP/1.1), status code (success/failure such as code 200, 404, 302), and status text;
 
 - What are HTTP headers?
 allow client and server to pass additional info with HTTP request or response;
 
 - Where would you go if you wanted to learn more about a specific HTTP Header?
-HTTPie
+mdn or the API documentation of API you're using;
 
 - Is a body required for a valid HTTP request or response message?
 no not all requests or response has one;
