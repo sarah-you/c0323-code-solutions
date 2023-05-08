@@ -7,7 +7,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What is the syntax for defining an arrow function?
 (param) => expression;
 (param) => {
-  statements
+  return statements
 };
 
 - When an arrow function's body is not surrounded in curly braces (_concise body syntax_), what changes in its functionality?
@@ -21,7 +21,7 @@ wrap the object literal in parentheses;
     foo(() => 42);
     ```
   - Identify the arrow function
-=>
+() => 42;
 
   - How many arguments does the arrow function take?
 0;
@@ -33,7 +33,7 @@ wrap the object literal in parentheses;
 1;
 
   - What type of argument is passed to the function `foo`?
-anonymous function;
+arrow function;
 
 - In the expression
     ```js
@@ -42,21 +42,23 @@ anonymous function;
     });
     ```
     - Identify the arrow function
-=>
+(y) => {
+      console.log(`4y = ${4 * y}`);
+    }
 
-    - How many arguments does the arrow function take?
+  - How many arguments does the arrow function take?
 1;
 
-    - What value does it return?
-prints (`4y = ${4 * y}`);
+  - What value does it return?
+undefined;
 
-    - How many arguments are passed to the function `bar`?
+  - How many arguments are passed to the function `bar`?
 1;
 
-    - What type of argument is passed to the function `bar`?
-anon function;
+  - What type of argument is passed to the function `bar`?
+arrow function;
 
-    - When does the arrow function's code get executed?
+  - When does the arrow function's code get executed?
 when bar function is called with an argument;
 
 - How does the value of `this` differ between standard functions and arrow functions?
