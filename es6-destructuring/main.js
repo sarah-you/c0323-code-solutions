@@ -7,12 +7,12 @@ const book1 = {
 const { title, author, libraryID } = book1;
 
 console.log(
-  'The title of this book is',
-  title,
-  ', the author is',
-  author,
-  ', and the library id is',
-  libraryID
+  `The title of this book is,
+  ${title},
+  the author is,
+  ${author},
+  and the library id is,
+  ${libraryID}`
 );
 
 const book2 = {
@@ -24,12 +24,12 @@ const book2 = {
 const { title: titleTwo, author: authorTwo, libraryID: libraryIdTwo } = book2;
 
 console.log(
-  'The title of the book is',
-  titleTwo,
-  ', the author is',
-  authorTwo,
-  ', and the library id is',
-  libraryIdTwo
+  `The title of the book is,
+  ${titleTwo},
+  , the author is,
+  ${authorTwo},
+  , and the library id is,
+  ${libraryIdTwo}`
 );
 
 const library = [
