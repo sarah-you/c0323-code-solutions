@@ -16,13 +16,9 @@
     "required-h1": false,
     "wai-aria": true,
     "class-naming": "/.+/",
-    "attr-equal-space-after": true,
-    "attr-equal-space-before": true,
-    "attr-spacing": true,
     "attr-value-quotes": true,
     "case-sensitive-attr-name": true,
-    "case-sensitive-tag-name": true,
-    "indentation": 2
+    "case-sensitive-tag-name": true
   },
   "nodeRules": [
     {
@@ -41,15 +37,6 @@
       "selector": "a",
       "rules": {
         "character-reference": false
-      }
-    }
-  ],
-  "childNodeRules": [
-    {
-      "selector": "html",
-      "inheritance": false,
-      "rules": {
-        "indentation": false
       }
     }
   ]
