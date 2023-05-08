@@ -1,11 +1,17 @@
 {
   "*.html": [
-    "markuplint"
+    "markuplint",
+  "prettier --write"
   ],
   "*.css": [
-    "stylelint --fix"
+    "stylelint --fix",
+    "prettier --write"
   ],
-  "*.{js,jsx}": [
-    "eslint --fix"
+  "*.{js,jsx,ts,tsx}": [
+    "eslint --fix",
+    "prettier --write"
+  ],
+  "*.{json,md}": [
+    "prettier --write"
   ]
 }
