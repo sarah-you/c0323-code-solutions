@@ -11,9 +11,6 @@ const v4 = [3, 5, 7, 9];
  * Expected: v1 message logs, v2 message does not.
  */
 
-// const isItTruthy = v1 !== null ? 'v1 is truthy' : 'v2 is truthy';
-// console.log('isItTruthy: ', isItTruthy);
-
 // v1 && console.log();
 
 /* TODO:
@@ -24,7 +21,7 @@ const v4 = [3, 5, 7, 9];
  * Expected: `config1 = { value: 'Something' }`, `config2 = 'default-value'`.
  */
 
-const config1 = v1 ?? 'default-value';
+const config1 = v1 || 'default-value';
 const config2 = v2 || 'default-value';
 console.log('config1: ', config1);
 console.log('config2: ', config2);
