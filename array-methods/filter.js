@@ -12,4 +12,7 @@ const names = [
   'Donna',
 ];
 
-//
+// const even = numbers.filter((n) => n % 2 === 0);
+// console.log(even);
+// const NoDs = names.filter((n) => !n.includes('d') && !n.includes('D');
+// console.log(noDs);
