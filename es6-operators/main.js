@@ -11,8 +11,10 @@ const v4 = [3, 5, 7, 9];
  * Expected: v1 message logs, v2 message does not.
  */
 
-const isItTruthy = v1 !== null ? 'v1 is truthy' : 'v2 is truthy';
-console.log('isItTruthy: ', isItTruthy);
+// const isItTruthy = v1 !== null ? 'v1 is truthy' : 'v2 is truthy';
+// console.log('isItTruthy: ', isItTruthy);
+
+// v1 && console.log();
 
 /* TODO:
  * Demonstrate how to assign a "default value" to a variable.
@@ -31,7 +33,7 @@ console.log('config2: ', config2);
  * Demonstrate how to assign a "default value" to a variable only if the variable is `undefined`.
  * In one expression, assign `'default-value'` to the variable `cfg1` if v1 is undefined.
  * In one expression, assign `'default-value'` to the variable `cfg2` if v2 is undefined.
- * In one expression, assign `'default-value'` to the variable `cfg3` if v2 is undefined.
+ * In one expression, assign `'default-value'` to the variable `cfg3` if v3 is undefined.
  * Log `cfg1`, `cfg2`, and `cfg3`.
  * Expected: `config1 = { value: 'Something' }`, `config2 = ''`, `config3 = 'default-value'`.
  */
@@ -42,6 +44,8 @@ const cfg3 = v2 === undefined ? v2 : 'default-value';
 console.log('cfg1: ', cfg1);
 console.log('cfg2: ', cfg2);
 console.log('cfg3: ', cfg3);
+
+// const cfg1 = v1 ?? 'default-value';
 
 /* TODO:
  * Use the shorthand if/else, which is especially useful for variable assignments.
@@ -69,7 +73,7 @@ console.log('tern2: ', tern2);
 
 const oc1 = v1?.value;
 const oc2 = v2?.value;
-const oc3 = v2?.value;
+const oc3 = v3?.value;
 console.log('oc1:', oc1);
 console.log('oc2:', oc2);
 console.log('oc3:', oc3);
@@ -82,7 +86,6 @@ console.log('oc3:', oc3);
  * Expected: `sObj = { value: 'Something', foo: 'bar' }`.
  */
 
-const v1Copy = { value: 'Something' };
 const sObj = { ...v1, foo: 'bar' };
 console.log('sObj: ', sObj);
 
@@ -94,6 +97,5 @@ console.log('sObj: ', sObj);
  * Expected: `sArr = [100, 3, 5, 7, 9]`.
  */
 
-const v4Copy = [3, 5, 7, 9];
-const sArr = [100, ...v4Copy];
+const sArr = [100, ...v4];
 console.log('sArr: ', sArr);
