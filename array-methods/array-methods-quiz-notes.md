@@ -25,6 +25,7 @@ After completing this exercise, you should be able to discuss or answer the foll
     the new array with the modified elements;
 
   - What is `Array.map` useful for?
+    creating new arrays after changing it;
 
 - `Array.filter`:
 

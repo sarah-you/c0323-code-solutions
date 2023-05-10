@@ -4,10 +4,7 @@ values.forEach((values) => {
   console.log(values);
 });
 
-// console.log('in reverse order: ');
-// const dec = values.indexOf(values.length - 1);
-// values.forEach(dec => {
-//  console.log(dec);
-// });
+console.log('in reverse order: ');
 
-// values.forEach((n, index) => console.log(values[values.length - 1 - index]));
+values.forEach((n, index) => console.log(values[values.length - 1 - index]));
+// index is used here because in order to go in reverse order, we need to subtract from the index from the next 'last' index;

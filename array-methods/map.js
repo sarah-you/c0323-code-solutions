@@ -1,7 +1,8 @@
 const prices = [42.42, 10, 28.2234, 3.2, 5, 12];
-const array = prices.map((prices) => prices / 2);
-console.log('Price objects: ', array);
+const obj = prices.map((p) => ({ price: p, salePrice: p / 2 }));
+console.log('Price objects: ', obj);
+// you can create objects directly inside by using the {}
 
-// priceObjs = prices.map((p) => ({ price: p, salePrice: p / 2}));
-
-// const foramatted = prices.map((p) => `$${p.toFixed(2)}`);
+const formatted = prices.map((p) => `$${p.toFixed(2)}`);
+console.log('Formatted prices: ', formatted);
+// to.Fixed() method sets the decimal point based on the digit inside the parantheses
