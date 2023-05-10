@@ -1,0 +1,500 @@
+   56  git branch javascript-view-swapping
+   57  git switch javascript-view-swapping
+   58  git status
+   59  git add javascript-view-swapping
+   60  git commit -m "WIP"
+   61  git switch main
+   62  git branch css-transitions
+   63  git switch css-transitions
+   64  git status
+   65  git add css-transitions
+   66  git commit -m "completed css-transitions."
+   67  git push origin css-transitions
+   68  git switch main
+   69  git switch css-transitions
+   70  git status
+   71  git add css-transitions
+   72  git commit -m "moved the transition properties to the base selector (from pseudo classes)."
+   73  git push origin css-transitions
+   74  git switch main
+   75  git branch css-responsive-layout
+   76  git switch main
+   77  git pull origin main
+   78  git branch css-responsive-layout
+   79  git switch css-responsive-layout
+   80  git status
+   81  git add css-responsive-layout
+   82  git commit -m "completed css-responsive-layout."
+   83  git push origin css-responsive-layout
+   84  git switch main
+   85  git switch css-responsive-layout
+   86  git status
+   87  git add css-responsive-layout
+   88  git commit -m "updated notes."
+   89  git switch main
+   90  git pull origin main
+   91  git branch javascript-and-json
+   92  git switch javascript-and-json
+   93  git status
+   94  git add javascript-and-jason
+   95  git add javascript-and-json
+   96  git commit -m "completed javascript-and-json."
+   97  git push origin javascript-and-json
+   98  git switch main
+   99  git switch javascript-and-json
+  100  git switch main
+  101  git switch javascript-and-json
+  102  git status
+  103  git status
+  104  git add javascript-and-json
+  105  git commit -m "updated js file."
+  106  git push origin javascript-and-json
+  107  git switch main
+  108  git switch javascript-and-json
+  109  git switch main
+  110  git pull origin main
+  111  git branch javascript-local-storage
+  112  git switch javascript-local-storage
+  113  git status
+  114  git add javascript-local-storage
+  115  git commit -m "work in progress."
+  116  git switch main
+  117  git switch javascript-local-storage
+  118  git status
+  119  git add javascript-local-storage
+  120  git commit -m "completed javascript-local-storage."
+  121  git push origin javascript-local-storage
+  122  git switch main
+  123  git switch javascript-view-swapping
+  124  git status
+  125  git add javascript-view-swapping
+  126  git commit -m "WIP"
+  127  git switch html-forms
+  128  git status 
+  129  git add html-forms
+  130  git commit -m "added labels with for attributes for line 16 and 49."
+  131  git push origin html-forms
+  132  git switch main
+  133  git switch javascript-view-swapping
+  134  git status
+  135  git add javascript-view-swapping
+  136  git commit -m "WIP"
+  137  git switch main
+  138  git switch css-brochure-form
+  139  git add css-brochure-form
+  140  git commit -m "added id on line 34 and for attribute on line 33"
+  141  git push origin css-brochure-form
+  142  git switch html-forms
+  143  git add html-forms
+  144  git commit -m "added ids for the label for attributes to link to for line 17 and 51"
+  145  git push origin html-forms
+  146  git switch main
+  147  git switch javascript-view-swapping
+  148  git add javascript-view-swapping
+  149  git commit -m "completed javascript-view-swapping"
+  150  git push origin javascript-view-swapping
+  151  git switch main
+  152  git switch dom-event-delegation
+  153  git add dom-event-delegation
+  154  git commit -m "updated notes on event.target"
+  155  git push origin dom-event-delegation
+  156  git switch main
+  157  git pull origin main
+  158  git branch css-canvas-medical
+  159  git switch css-canvas-medical
+  160  git status
+  161  git add css-canvas-medical
+  162  git commit -m "WIP"
+  163  git push origin css-canvas-medical
+  164  git switch main
+  165  git commit -m "updated notes"
+  166  git push origin javascript-this
+  167  git switch main
+  168  git switch javascript-local-storage
+  169  git add javascript-local-storage
+  170  git commit -m "added if statement for line 13"
+  171  git push origin javascript-local-storage
+  172  git switch main
+  173  git switch javascript-view-swapping
+  174  git add javascript-view-swapping
+  175  git commit -m "updated notes and deleted all console logs"
+  176  git push origin javascript-view-swapping
+  177  git switch main
+  178  git branch javascript-prototypes
+  179  git switch javascript-prototypes
+  180  git add javascript-prototypes
+  181  git commit -m "completed javascript-prototypes"
+  182  git push origin javascript-prototypes
+  183  git switch main
+  184  git switch javascript-prototypes
+  185  git status
+  186  git switch main
+  187  git pull origin main
+  188  git branch javascript-constructors
+  189  git switch javascript-constructors
+  190  git add javascript-constructors
+  191  git commit -m "completed javascript-constructors"
+  192  git push origin javascript-constructors
+  193  git switch main
+  194  git switch javascript-constructors
+  195  git status
+  196  git switch main
+  197  git pull origin main
+  198  git branch javascript-bank
+  199  gt switch javascript-bank
+  200  git switch javascript-bank
+  201  git status
+  202  git add javascript-bank
+  203  git commit -m "WIP account.deposit(amount)"
+  204  git commit -m "WIP account.deposit(amount)"
+  205  git commit -m "WIP account.deposit(amount)"
+  206  git commit -m --no-verify  "WIP account.deposit(amount)"
+  207  git commit -m "WIP account.deposit(amount)" --no-verify
+  208  git push javascript-bank
+  209  git push origin javascript-bank
+  210  git switch main
+  211  git pull origin main
+  212  git branch es6-classes
+  213  git switch es6-classes
+  214  git status
+  215  git add es6-classes
+  216  git commit -m "completed exercise"
+  217  git push origin es6-classes
+  218  git switch main
+  219  git switch es6-classes
+  220  git status
+  221  git add es6-classes
+  222  git commit -m "updated notes"
+  223  git push origin es6-classes
+  224  git switch main
+  225  git pull origin main
+  226  git branch javascript-timers
+  227  git switch javascript-timers
+  228  git add javascript-timers
+  229  git commit -m "completed exercise."
+  230  git push origin javascript-timers
+  231  git switch main
+  232  git switch javascript-timers
+  233  git add javascript-timers
+  234  git commit -m "updated js files to move the variables to global space"
+  235  git switch main
+  236  git switch javascript-timers
+  237  git push origin javascript-timers
+  238  git switch main
+  239  git pull origin main
+  240  git branch string-manipulation-2
+  241  git switch string-manipulation-2
+  242  git switch main
+  243  git switch javascript-timers
+  244  git add javascript-timers
+  245  git commit -m "updated notes"
+  246  git push origin javascript-timers
+  247  git switch main
+  248  git pull origin main
+  249  git branch javascript-carousel
+  250  git switch javascript-carousel
+  251  git add
+  252  git status
+  253  git add javascript-carousel
+  254  git commit -m "created automatic transition carousel every 3 seconds"
+  255  git status
+  256  git add .
+  257  git commit -m "redo carousel; recenter image and progress icon"
+  258  git commit -m "redo carousel; recenter image and progress icon"
+  259  git status
+  260  git add /
+  261  git add .
+  262  git commit -m "redo carousel; recenter image and progress icon"
+  263  git push origin javascript-carousel
+  264  git switch main
+  265  git pull origin main
+  266  git branch es6-template-literals
+  267  git switch es6-template-literals
+  268  git status
+  269  git add es6-template-literals
+  270  git commit -m "completed exercise"
+  271  git push origin es6-template-literals
+  272  git switch main
+  273  git switch string-manipulation-2
+  274  git status
+  275  git add .
+  276  git commit -m "WIP -- capitalizeWords"
+  277  git push origin string-manipulation-2
+  278  git switch main
+  279  git switch es6-template-literals
+  280  git add es6-template-literals
+  281  git commit -m "edited console logs in the html file and updated notes"
+  282  git push origin es6-template-literals
+  283  git switch main
+  284  git branch http-messages
+  285  git switch http-messages
+  286  cd http-messages
+  287  GET /https://example.com
+  288  https://example.com
+  289  GET https://example.com
+  290  http https://example.com
+  291  cd http-messages
+  292  http https://example.com
+  293  --verbose https://example.com
+  294  http --verbose https://example.com
+  295  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/users.json
+  296  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/users.json
+  297  http --body GET https://jsonplaceholder.typicode.com/users > users.json
+  298  http --body GET https://example.com > http-messages/index.html
+  299  http --body GET https://example.com > index.html
+  300  git status
+  301  git add .
+  302  git commit -m "GET request and added .json and html files"
+  303  git add .
+  304  git commit -m "completed exercise."
+  305  git push origin http-messages
+  306  git status
+  307  git add .
+  308  git commit -m "updated notes"
+  309  git push origin http-messages
+  310  git switch main
+  311  git pull origin main
+  312  git branch javascript-ajax
+  313  git switch javascript-ajax
+  314  git add javascript-ajax
+  315  git commit -m "completed exercise"
+  316  git push origin javascript-ajax
+  317  git add .
+  318  git commit -m "updated notes"
+  319  git push origin javascript-ajax
+  320  git switch main
+  321  git switch issue-4-delete-entry
+  322  npm install --save-dev prettier eslint-config-prettier
+  323  npm install --save-dev stylelint@latest
+  324  npm install --save-dev stylelint@latest --legacy-peer-deps
+  325  git status
+  326  git add .
+  327  git push origin main
+  328  git pull origin main
+  329  git push origin main
+  330  git status
+  331  git add .
+  332  git push origin main
+  333  git pull origin main
+  334  git branch es6-destructuring
+  335  git switch es6-destructuring
+  336  git status
+  337  git add es6-destructuring
+  338  git commit -m "completed exercise."
+  339   npm install eslint-plugin-import@latest --save-dev
+  340  npm install
+  341   npm install eslint-plugin-import@latest --save-dev
+  342  git status
+  343  git add .
+  344  git commit -m "completed exercise and updated json package"
+  345  git push origin es6-destructuring
+  346  git status
+  347  git add .
+  348  git commit -m "updated console logs to string interpolation"
+  349  git push origin es6-destructuring
+  350  git switch main
+  351  git pull origin main
+  352  git branch es6-arrow-functions
+  353  git switch es6-arrow-functions
+  354  git status
+  355  git add es6-arrow-functions
+  356  git commit -m "completed exercise."
+  357  git push origin es6-arrow-functions
+  358  git status
+  359  git status
+  360  git add .
+  361  git commit -m "updated notes"
+  362  git push origin es6-arrow-functions
+  363  git status
+  364  git add .
+  365  git commit -m "updated notes"
+  366  git switch main
+  367  git pull origin main
+  368  git branch es6-operators
+  369  git switch es6-operators
+  370  git status
+  371  git add .
+  372  git commit -m "completed exercise."
+  373  git push origin es6-operators
+  374  git status
+  375  git add .
+  376  git commit -m "updated notes. will be fixing exercise."
+  377  git status
+  378  git status
+  379  git add . 
+  380  git commit -m "saving changes"
+  381  git switch main
+  382  git pull origin main
+  383  git branch array-filter
+  384  git switch array-filter
+  385  git branch -m array-method
+  386  git status
+  387  git add .
+  388  git status
+  389  git status
+  390  git add . 
+  391  git commit -m "exercise WIP"
+  392  git switch main
+  393  git swtich array-method
+  394  git switch array-method
+  395  git status
+  396  git add . 
+  397  git commit -m "WIP"
+  398  git switch main
+  399  git pull origin main
+  400  git branch command-line-basics
+  401  git switch command-line-basics
+  402  cd command-line-basics
+  403  man man
+  404  man cat
+  405  man cat laziness.txt
+  406  cat laziness.txt
+  407  cat impatience.txt
+  408  cat hubris.txt
+  409  cat laziness.txt impatience.txt hubris.txt
+  410  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  411  cat three-virtues.txt
+  412  man ls
+  413  ls -aF lfz-staff > lfz-staff/contents.txt
+  414  man pwd
+  415  pwd command-line-basics
+  416  pwd > i-was-here.txt
+  417  ls  -aF command-line-basics
+  418  ls -aF i-was-here.txt
+  419  man ls
+  420  ls -a
+  421  cat i-was-here.txt
+  422  cat i-was-here.txt
+  423  man cat i-was-here.txt
+  424  cat i-was-here.txt
+  425  cat pwd
+  426  cat i-was-here.txt
+  427  man echo
+  428  echo 'Hello World!'
+  429  echo 'Hello World!' > hello.txt
+  430  mans ls
+  431  man ls
+  432  ls hello.txt
+  433  ls -a
+  434  cat hello.txt
+  435  man touch
+  436  touch tag-youre-it.txt
+  437  touch snoot/boop.txt
+  438  man ls
+  439  man ls
+  440  man ls
+  441  ls snoot/
+  442  echo $PATH
+  443  man mkdir
+  444  man mv
+  445  cd .. 
+  446  git status
+  447  git add . 
+  448  git commit -m "WIP"
+  449  git switch main
+  450  git pull origin main
+  451  git branch node-intro
+  452  git switch node-intro
+  453  cd node-intro
+  454  node --version
+  455  man node
+  456  node hello-node.js
+  457  node
+  458  node
+  459  node
+  460  cd ..
+  461  git status
+  462  git add . 
+  463  git commit -m "completed exercise."
+  464  git push origin node-intro 
+  465  git pull origin main
+  466  git switch main
+  467  git pull origin main
+  468  node
+  469  git branch node-process
+  470  git switch node-process
+  471  cd node-process
+  472  man top
+  473  top -u dev
+  474  top -u dev
+  475  cd ..
+  476  git status
+  477  git add .
+  478  git commit -m "completed exercise."
+  479  git push origin node-process
+  480  git switch main
+  481  git switch array-methods
+  482  git switch arrays-methods
+  483  git switch array-filters
+  484  git switch arrays-filter
+  485  git branch --list
+  486  git switch array-method
+  487  git -m array-methods
+  488  git branch -m array-methods
+  489  git branch --list
+  490  git status
+  491  git status
+  492  git add .
+  493  git commit -m "completed exercise"
+  494  git push origin array-methods
+  495  git switch main
+  496  git switch command-line-basics
+  497  cd
+  498  cd ..
+  499  ..cd
+  500  .. cd
+  501  cd command-line-basics
+  502  man mkdir
+  503  man ls
+  504  ls parent/
+  505  ls parent/command-line-basics
+  506  mkdir parent
+  507  mkdir -p parent/child/grandchil
+  508  touch .gitkeep/grandchil
+  509  ls grandchil
+  510  ls parent
+  511  ls child
+  512  man touch
+  513  touch grandchild/.gitkeep
+  514  man touch
+  515  touch -c grandchild/.gitkeep
+  516  ls -a
+  517  ls -a parent
+  518  ls -a child
+  519  ls -a .. child
+  520  ls -a .child
+  521  ls -a . child
+  522  ls -a .. grandchild
+  523  ls -a ... .gitkeep
+  524  ls -a .. .gitkeep
+  525  ls -a .gitkeep
+  526  touch -c parent/child/grandchild/.gitkeep
+  527  ls -a grandchild
+  528  man mv
+  529  man mv
+  530  mv pokiemans
+  531  mv pokiemans > pokemon
+  532  man mv
+  533  mv pokiemans pokemon
+  534  mv pokiemans .pokemon
+  535  ls pokemon
+  536  man rm
+  537  man rm
+  538  rm lol.txt
+  539  ls lol.txt
+  540  rm -r kill-me/
+  541  ls kill-me/
+  542  man rm
+  543  man cp
+  544  man cp
+  545  cp and-then.txt
+  546  cp /and-then.txt
+  547  cp and-then.txt no-and-then.txt
+  548  ls and-then.txt
+  549  ls no-and-then.txt
+  550  cat and-then.txt
+  551  cat and-then.txt
+  552  man history
+  553  man history
+  554  history
+  555  history > command-history.txt
