@@ -11,7 +11,8 @@ const v4 = [3, 5, 7, 9];
  * Expected: v1 message logs, v2 message does not.
  */
 
-// v1 && console.log();
+v1 && console.log('v1 is truthy');
+v2 && console.log('v2 is truthy');
 
 /* TODO:
  * Demonstrate how to assign a "default value" to a variable.
@@ -35,14 +36,12 @@ console.log('config2: ', config2);
  * Expected: `config1 = { value: 'Something' }`, `config2 = ''`, `config3 = 'default-value'`.
  */
 
-const cfg1 = v1 === undefined ? 'default-value' : v1;
-const cfg2 = v2 === undefined ? 'default-value' : v2;
-const cfg3 = v2 === undefined ? v2 : 'default-value';
+const cfg1 = v1 ?? 'default-value';
+const cfg2 = v2 ?? 'default-value';
+const cfg3 = v3 ?? 'default-value';
 console.log('cfg1: ', cfg1);
 console.log('cfg2: ', cfg2);
 console.log('cfg3: ', cfg3);
-
-// const cfg1 = v1 ?? 'default-value';
 
 /* TODO:
  * Use the shorthand if/else, which is especially useful for variable assignments.
