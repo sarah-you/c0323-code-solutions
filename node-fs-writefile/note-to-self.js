@@ -1,16 +1,9 @@
-import { writeFile } from 'node:fs';
+import { writeFile } from 'node:fs/promises';
 
-const data = process.argv[2] + '\n';
-console.log(data);
-writeFile('note.txt', String(data), (err) => {
-  if (err) throw err;
+try {
+  const [, , note] = process.argv;
   console.log('The file has been saved!');
-});
-
-// answer key code:
-// const [, , note] = process.argv;
-// try {
-//   await writeFile('note.txt', note + '\n', 'utf8');
-// } catch (err) {
-//   console.error(err);
-// }
+  await writeFile('note.txt', note + '\n');
+} catch (err) {
+  console.error(err.message);
+}

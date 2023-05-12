@@ -1,15 +1,10 @@
-import { writeFile } from 'node:fs';
+import { writeFile } from 'node:fs/promises';
 
-const data = String(Math.random() + '\n');
-writeFile('random.txt', data, (err) => {
-  if (err) throw err;
+try {
+  const data = Math.random() + '\n';
+  console.log(data);
+  await writeFile('random.txt', data);
   console.log('The file has been saved!');
-});
-
-// answer key code:
-// const rNum = Math.random();
-// try {
-//   await writeFile('random.txt', rNum + '\n', 'utf8');
-// } catch (err) {
-//   console.error(err);
-// }
+} catch (err) {
+  console.error(err.message);
+}
