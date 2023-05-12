@@ -14,7 +14,7 @@ consists of 3 components: website(discover packages), CLI(terminal to interact w
   contains all the files needed for a module(library);
 
 - What are some other popular package managers?
-  yarn,
+  yarn(developed by FB which also develops React and Jest) and PNPM
 
 - How can you create a `package.json` with `npm`?
   cp .npm-init.js file in terminal (in the directory for it)
@@ -27,7 +27,9 @@ consists of 3 components: website(discover packages), CLI(terminal to interact w
   you can add all the dependencies listed in the package by running 'npm install' command inside the project directory;
 
 - What happens when you add a dependency to a package with `npm`?
-  it gets added automatically(?)
+  adds it to package.json file;
+  makes package.json and node modules consistent -- if you delete a module, it'll go through the node module folder and delete the dependency to keep it consistent;
+  use 'npm install' (no parameters) to make sure all dependencies are there;
 
 - What is a devDependency and how do you add one to a package?
   devDependency is package only needed for local development and testing (whereas dependencies are packages you need for your application)
@@ -56,3 +58,4 @@ theres lots of packages which can be used in the browser on the front end
 npm registry: big database of info about packages that people are sharing
 
 jQuery: fast, small, and feature-rich JS library;
+collections of functions to use for JS (ex. dom manipulation);
