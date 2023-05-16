@@ -22,6 +22,8 @@ After completing this exercise, you should be able to discuss or answer the foll
 
 ## Notes
 
+- forking: process of creating a new copy of existing codebase/project to make changes to codebase without affecting original version
+
 #### Why Databases?
 
 Applications are typically backed by some form of data store. It is possible for data to be stored directly in files that are managed by the application, but when the application needs to quickly retrieve or store complex data in an organized fashion, a database fills that need nicely. Databases also can be shared by many users and thus provide a centralized location for application data. Most enterprise businesses will keep their business data in one or more databases, which can manage many Gigabytes or even Terabytes of data.
@@ -55,3 +57,57 @@ The user's client (frontend) application that wants to perform database operatio
 As is typical of client/server applications, the client and the server can be on different hosts. In that case they communicate over a TCP/IP network connection. You should keep this in mind, because the files that can be accessed on a client machine might not be accessible (or might only be accessible using a different file name) on the database server machine.
 
 The PostgreSQL server can handle multiple concurrent connections from clients. To achieve this it starts (“forks”) a new process for each connection. From that point on, the client and the new server process communicate without intervention by the original postgres process. Thus, the supervisor server process is always running, waiting for client connections, whereas client and associated server processes come and go. (All of this is of course invisible to the user. We only mention it here for completeness.)
+
+#### Relational database vs. noSQL database
+
+Relational databases (RDBMS) and NoSQL databases are two broad categories of database management systems that differ in their data modeling, scalability, and flexibility.
+
+Relational databases are based on the relational database model, which organizes data into tables with rows and columns, where each table represents an entity and each column represents a property or attribute of that entity. Relational databases enforce a strict schema that defines the structure and relationships between tables, and they typically use SQL (Structured Query Language) to retrieve and manipulate data.
+
+In contrast, NoSQL databases (which stands for "not only SQL") are designed to handle unstructured or semi-structured data that does not fit well into the rigid structure of a relational database. NoSQL databases use a variety of data models, such as document-oriented, key-value, column-family, and graph databases, to represent data. NoSQL databases are typically more scalable and flexible than relational databases, as they do not require a fixed schema and can handle large volumes of data and traffic.
+
+Here are some key differences between relational databases and NoSQL databases:
+
+- Data modeling: Relational databases enforce a rigid schema, which can make it difficult to store and manage data that does not fit well into a predefined structure. NoSQL databases are more flexible in their data modeling, allowing developers to store and query data in a way that makes sense for their specific application.
+
+- Scalability: Relational databases are typically vertically scalable, which means that they can handle increased traffic and data volumes by adding more resources (such as CPU, memory, or storage) to a single server. NoSQL databases are designed to be horizontally scalable, which means that they can handle increased traffic and data volumes by adding more servers to a distributed network.
+
+- Query language: Relational databases use SQL as their query language, which provides a powerful and standardized way to retrieve and manipulate data. NoSQL databases do not have a standardized query language, and may require developers to use proprietary or custom query languages.
+
+- ACID compliance: Relational databases are typically ACID (Atomicity, Consistency, Isolation, Durability) compliant, which means that they ensure data consistency and integrity even in the face of system failures or errors. NoSQL databases may not be ACID compliant, and may sacrifice consistency or durability for scalability or performance.
+
+The choice between a relational database and a NoSQL database depends on the specific requirements and characteristics of your application. Relational databases are well-suited for applications with well-defined schemas and structured data, such as financial systems or e-commerce applications. NoSQL databases are better suited for applications with flexible or unstructured data, such as social media platforms or big data analytics.
+
+#### `'sudo service postgresql start'`
+
+The command "sudo service postgresql start" is used to start the PostgreSQL database server on a Linux system. Here is a breakdown of what each part of the command means:
+
+- "sudo": This is a command used in Linux to run another command with elevated privileges. In other words, it allows you to run the following command as a superuser or administrator.
+
+- "service": This is a command used in Linux to manage system services, such as starting or stopping a particular service.
+
+- "postgresql": This refers to the PostgreSQL database server. When you install PostgreSQL on a Linux system, it creates a system service that can be managed using the "service" command.
+
+- "start": This is an argument passed to the "service" command, indicating that you want to start the PostgreSQL service.
+
+So, when you run the command "sudo service postgresql start" in the command line, you are telling the system to start the PostgreSQL service with elevated privileges. This will start the PostgreSQL database server, allowing you to connect to it and work with your databases.
+
+#### `'pgweb'`
+
+pgweb is a web-based interface for managing PostgreSQL databases. It provides a user-friendly web interface that allows users to interact with their PostgreSQL databases without needing to use a command-line interface or a desktop client.
+
+pgweb can be used to perform various database tasks, such as creating and managing database tables, executing SQL queries, and managing users and permissions. It also provides features like syntax highlighting, autocomplete, and a query history, which can make working with databases more efficient.
+
+pgweb is a popular tool for developers and database administrators who need to work with PostgreSQL databases. It is open source and can be easily installed on Linux, macOS, and Windows systems. Additionally, because it is a web-based tool, it can be accessed from any computer or device with a web browser and internet connection, making it a convenient option for remote work or collaboration.
+
+#### `"psql -c '\l'"`
+
+The command "psql -c '\l'" is used to list all the databases available in a PostgreSQL server from the command line. Here's what each part of the command means:
+
+- "psql": This is the command-line interface for interacting with a PostgreSQL database server.
+
+- "-c": This is a command-line option for psql that allows you to execute a single command and then exit. In this case, the command we are executing is '\l'.
+
+- "\l": This is a meta-command that is used within psql to list all available databases in the PostgreSQL server. The backslash '\' indicates that this is a meta-command, and the 'l' stands for "list".
+
+So, when you run the command "psql -c '\l'" in the command line, you are telling the psql command-line interface to execute the '\l' meta-command, which lists all the databases available in the PostgreSQL server. The output will show the name of each database, along with other information like the owner and encoding.
