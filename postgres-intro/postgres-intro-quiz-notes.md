@@ -18,7 +18,7 @@ After completing this exercise, you should be able to discuss or answer the foll
   - SQLite is a relational database that is in majority of devices and applications so having familiarity with relational database would help as a web developer
 
 - What is one way to see if PostgreSQL is running?
-  - 'sudeo service postgresql status'
+  - 'sudo service postgresql status'
 
 ## Notes
 
