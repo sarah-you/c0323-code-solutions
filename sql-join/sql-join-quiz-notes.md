@@ -6,11 +6,12 @@ After completing this exercise, you should be able to discuss or answer the foll
 
 - What is a foreign key?
 
-  - a reference for 2 or more tables can use to share its data rather than listing everything in each of the tables
+  - a reference for 2 or more tables can use to share its data rather than listing everything in each of the table
+  - it's a reference to a primary key of another table
 
 - How do you join two SQL tables?
 
-  - keywords: select/from (data table), join (data table)/using (foreign key)
+  - keyword join (data table)/using (foreign key -- if columns have the same name)
 
 - How do you temporarily rename columns or tables in a SQL statement?
   - aliasing column names using 'as'
