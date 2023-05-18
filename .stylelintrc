@@ -4,10 +4,10 @@
     "stylelint-config-standard"
   ],
   "rules": {
-    "alpha-value-notation": "null",
-    "color-function-notation": "null",
+    "alpha-value-notation": null,
+    "color-function-notation": null,
     "declaration-block-no-redundant-longhand-properties": null,
-    "keyframe-name-pattern": null,
+    "keyframes-name-pattern": null,
     "no-empty-source": null,
     "selector-class-pattern": null
   }
