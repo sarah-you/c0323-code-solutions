@@ -11,6 +11,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What is the advantage of using Webpack (or a similar bundler)?
 
   - you can manage your files and assets more efficiently
+  - makes ur file size as small as possible
 
 - What is Babel?
 
@@ -55,17 +56,15 @@ const baz = () => {
 baz();
 ```
 
-3. Take a screenshot of the REPL window. This will be the screenshot you include in your Pull Request.
-
 ### Webpack
 
 https://webpack.js.org/
 
-Browsers are just beginning to add support for loading JavaScript from multiple modules. However, the support is not universal. Further, with broad use of npm packages in frontend code, the number of files that need to be downloaded can be quite large. In addition, npm packages and modules frequently contain a lot of code that may not be used in the application, which results in wasted downloads of unused code.
+Browsers are just beginning to add support for loading JavaScript from multiple modules. However, the support is not universal. Further, with broad use of `npm` packages in frontend code, the number of files that need to be downloaded can be quite large. In addition, `npm` packages and modules frequently contain a lot of code that may not be used in the application, which results in wasted downloads of unused code.
 
-For these reasons, "bundlers" have been developed that bundle all the code from JavaScript files and npm packages into a single (or a few) files that can be easily downloaded. In the process, many bundlers will remove unused code and may also "minify" and/or "obfuscate" the code by renaming variables and functions to just a few letters. This makes the bundled code even smaller, and also obscures code so it more difficult for prying eyes to decipher. Because of these advantages, most websites use a bundler on their production code.
+For these reasons, "bundlers" have been developed that bundle all the code from JavaScript files and `npm` packages into a single (or a few) files that can be easily downloaded. In the process, many bundlers will remove unused code and may also "minify" and/or "obfuscate" the code by renaming variables and functions to just a few letters. This makes the bundled code even smaller, and also obscures code so it more difficult for prying eyes to decipher. Because of these advantages, most websites use a bundler on their production code.
 
-The most popular bundler for Web applications is Webpack, though others are available that offer faster bundle times or other features that Webpack is missing. Webpack works by examining your code, starting at its entry point, and recursively scanning the import statements to find all the modules your code uses. It builds a dependency graph and analyzes it to find and remove code that is not in use (using a process known as tree shaking). It renames functions, variables, classes, etc., to ensure there are no name conflicts and to minimize and obfuscate the resulting JavaScript code. It performs similar optimizations on HTML, CSS, and image files. The result is a small number of files that can be easily sent to a browser by a Web server.
+The most popular bundler for Web applications is Webpack, though others are available that offer faster bundle times or other features that Webpack is missing. Webpack works by examining your code, starting at its entry point, and recursively scanning the `import` statements to find all the modules your code uses. It builds a dependency graph and analyzes it to find and remove code that is not in use (using a process known as **tree shaking**). It renames functions, variables, classes, etc., to ensure there are no name conflicts and to minimize and obfuscate the resulting JavaScript code. It performs similar optimizations on HTML, CSS, and image files. The result is a small number of files that can be easily sent to a browser by a Web server.
 
 tree shaking: https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking
 
@@ -76,35 +75,41 @@ Below is an info-graphic of how Webpack bundles multiple modules into a single J
 Look through the Webpack Concepts page to get an idea of the features Webpack offers.
 https://webpack.js.org/concepts/
 
-Webpack follows precise rules when locating the modules it will bundle. The process of locating modules is known as Module Resolution. It is important to understand this process so you can correctly formulate import statements to find the modules you are using. The rules are documented, but since they are very customizable they can be challenging to interpret. The rules have therefore been summarized here.
+Webpack follows precise rules when locating the modules it will bundle. The process of locating modules is known as **Module Resolution**. It is important to understand this process so you can correctly formulate import statements to find the modules you are using. The rules are documented, but since they are very customizable they can be challenging to interpret. The rules have therefore been summarized here.
 
-The process proceeds in two steps. First, the import statement is examined and a potential match is found. Then, the actual file is located. The process is:
+Module Resolution: https://webpack.js.org/concepts/module-resolution/
 
-Absolute Paths
-If an import statement contains an absolute path (one that begins with /), that path is followed to a potential match.
+The process proceeds in two steps. First, the `import` statement is examined and a potential match is found. Then, the actual file is located. The process is:
+
+#### Absolute Paths
+
+If an `import` statement contains an absolute path (one that begins with` /`), that path is followed to a potential match.
 
 Note: Importing from an absolute path is usually a bad idea since it is unlikely that every computer the code will run on has the correct file at that precise path.
 
-Relative Paths
-If an import statement contains a relative path, the path is followed relative to the file containing the import statement to a potential match.
+#### Relative Paths
+
+If an `import` statement contains a relative path, the path is followed relative to the file containing the import statement to a potential match.
 
 Module Paths
-If an import statement contains a path that is not absolute and does not begin with ./ then Webpack follows the "Node Modules" lookup strategy. This strategy looks in the current directory for another directory named node_modules. If it finds one, it looks in there for a directory whose name matches the import statement. If a match is not found, the parent directory is searched for node_modules and if found, that directory is searched. If no match is found, then the next directory up the hierarchy is searched, and so on, all the way up to the root of the file system. The first potential match is then examined.
+If an import statement contains a path that is not absolute and does not begin with `./ ` then Webpack follows the "Node Modules" lookup strategy. This strategy looks in the current directory for another directory named `node_modules`. If it finds one, it looks in there for a directory whose name matches the `import` statement. If a match is not found, the parent directory is searched for `node_modules` and if found, that directory is searched. If no match is found, then the next directory up the hierarchy is searched, and so on, all the way up to the root of the file system. The first potential match is then examined.
 
-Locating the File
-Once Webpack finds a potential match, that potential match is compared to the import statement in the order below, until a matching file is found:
+#### Locating the File
 
-If the import statement has a file extension, that is used to locate the file
-If there is no file extension, .js and .jsx are used
-If the potential match is a directory:
-If the directory contains package.json and it has a "main" property, that property is used to locate the file
-If the directory contains index.js that file is used
+Once Webpack finds a potential match, that potential match is compared to the `import` statement in the order below, until a matching file is found:
+
+- If the `import` statement has a file extension, that is used to locate the file
+- If there is no file extension, `.js` and `.jsx` are used
+- If the potential match is a directory:
+  - If the directory contains `package.json` and it has a "main" property, that property is used to locate the file
+  - If the directory contains `index.js` that file is used
+
 Once the above process locates an actual file, that file is imported. If none is found, the import fails.
 
-Note: Although the above defaults are technically optional, in React code it is customary to never specify .js or .jsx extensions or to specify index.js. In fact, many projects use lint rules that complain if you specify the default values. Therefore, for this exercise, your code should make use of the defaults.
-Note: Although the above defaults are honored in code bundled with Webpack (and its competitors) and are customary in React, those defaults are not honored by Node. Therefore, in Node code, the .js and .jsx extensions and index.js are required. This difference will certainly trip you up a time or two before you get used to it!
+- **Note**: Although the above defaults are technically optional, in React code it is customary to never specify .js or .jsx extensions or to specify index.js. In fact, many projects use lint rules that complain if you specify the default values. Therefore, for this exercise, your code should make use of the defaults.
+- **Note**: Although the above defaults are honored in code bundled with Webpack (and its competitors) and are customary in React, those defaults are not honored by Node. Therefore, in Node code, the .js and .jsx extensions and index.js are required. This difference will certainly trip you up a time or two before you get used to it!
 
-#### Real-life example of using webpack:
+### Real-life example of using webpack:
 
 Imagine you're developing a modern web application that consists of multiple JavaScript modules, CSS files, and various static assets like images and fonts. Each module has its own set of dependencies and imports.
 
