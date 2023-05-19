@@ -33,8 +33,11 @@ app.get('/api/grades', (req, res) => {
 
 app.delete('/api/grades/:id', (req, res) => {
   const userId = req.params.id;
-  delete grades[userId];
-  res.sendStatus(204);
+  if (userId in grades) {
+    delete grades[userId];
+  } else {
+    res.status(400).json('userId does not exist');
+  }
 });
 
 app.listen(8080, () => {
