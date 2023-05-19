@@ -5,6 +5,8 @@ const app = express();
 let nextId = 1;
 const grades = {};
 
+app.use(express.json());
+
 app.get('/api/grades', (req, res) => {
   const array = [];
   for (const prop in grades) {
@@ -12,8 +14,6 @@ app.get('/api/grades', (req, res) => {
   }
   res.json(array);
 });
-
-app.use(express.json());
 
 app.post('/api/grades', (req, res) => {
   const inputObj = req.body;
