@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
 import CustomButton from './Custombutton';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer">
-          {/* <CustomButton(props)/> */}
-        </a>
-      </header>
+    <div>
+      <CustomButton text="I" color="red" />
+      <CustomButton text="know" color="green" />
+      <CustomButton text="React!" color="lightblue" />
     </div>
   );
 }
 
-export default App;
+// App function is the parent component -- App component renders multiple instances of CustomButton component

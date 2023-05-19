@@ -83,8 +83,17 @@ function FooBar({ name, rank, serialNo }) {
 
 ## Notes
 
-Passing Props to a Component
+**Passing Props to a Component**
 https://react.dev/learn/passing-props-to-a-component
+
+**Adding a Stylesheet**
+https://create-react-app.dev/docs/adding-a-stylesheet/
+
+**Adding CSS Modules**
+https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/
+
+**A Thorough Analysis of CSS-in-JS**
+https://css-tricks.com/a-thorough-analysis-of-css-in-js/
 
 React components use props to communicate with each other.
 

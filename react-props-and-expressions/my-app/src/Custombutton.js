@@ -1,8 +1,5 @@
-export default function CustomButton(props) {
-  let text = 'I';
-  return (
-    <div>
-      <button>{text}</button>
-    </div>
-  );
+// CustomButton is the child component of the App function (in app.js file)
+
+export default function CustomButton({ text, color }) {
+  return <button style={{ backgroundColor: color }}>{text}</button>;
 }
