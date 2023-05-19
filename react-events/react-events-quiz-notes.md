@@ -14,20 +14,21 @@ After completing this exercise, you should be able to discuss or answer the foll
 
 - How do you pass an event handler to a React component?
 
-  - as a prop
+  - assign function to the event handler prop (usually starts with "on")
 
 - What is the naming convention for event handlers?
 
-  - "handle" before the event name to indicate it's handling a specific event
+  - "handle" before the event name to indicate it's handling a specific event + camelCase
 
 - What is an "event handler prop"? Which component declares the prop?
 
   - a prop used to pass an event handler function from a parent to a child component, allowing the child component to execute something when the event occurs
-  - the parent declares the prop
+  - the component that fires the event (CustomButton.js in our file)
+  - handler goes to the listening (App.js in our file)
 
 - What are some custom event handler props a component may wish to define?
 
-  - onSmash
+  - just any common things users do with mouse/keys
 
 - What is the naming convention for custom event handler props?
   - "on" and use of camelCase
