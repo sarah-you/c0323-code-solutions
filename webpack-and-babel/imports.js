@@ -19,4 +19,4 @@ import f4 from './baz';
 import f5 from '../baz';
 
 // import from an `npm` module named `react`:
-import f6 from '/react/npm';
+import f6 from 'react';
