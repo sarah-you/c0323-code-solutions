@@ -3,6 +3,9 @@ import './App.css';
 import CustomButton from './CustomButton';
 
 function App() {
+  function handleCustomClick(text) {
+    window.alert(text);
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -10,7 +13,21 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <CustomButton text="this is a button!" color="lightblue" />
+        <CustomButton
+          text="Click LightBlue!"
+          onCustomClick={handleCustomClick}
+          color="lightblue"
+        />
+        <CustomButton
+          text="Click Pink!"
+          onCustomClick={handleCustomClick}
+          color="pink"
+        />
+        <CustomButton
+          text="Click Yellow!"
+          onCustomClick={handleCustomClick}
+          color="yellow"
+        />
       </header>
     </div>
   );

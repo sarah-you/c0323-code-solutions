@@ -41,6 +41,8 @@ Event handlers are your own functions that will be triggered in response to inte
 
 React lets you add event handlers to your JSX.
 
+a common technique for building reusable components in React: the parent component passes props and event handlers to its children. The children display the props and call the event handlers when events happen.
+
 ### Adding event handlers
 
 first define a function and then pass it as a prop to the appropriate JSX tag
