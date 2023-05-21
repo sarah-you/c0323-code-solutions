@@ -4,19 +4,29 @@
 
 After completing this exercise, you should be able to discuss or answer the following questions:
 
-- ## What are _hooks_ in React?
+- What are _hooks_ in React?
 
-- ## What are the "Rules of Hooks"? (if necessary, re-read the "Pitfall" box in [State](https://react.dev/learn/state-a-components-memory))
+  - functions that allow you to use and manage state
 
-- ## What is the purpose of state in React?
+- What are the "Rules of Hooks"? (if necessary, re-read the "Pitfall" box in [State](https://react.dev/learn/state-a-components-memory))
 
-- ## Why can't we just maintain state in a local variable?
+  - you can only call it at the top level of component (like imports)
+
+- What is the purpose of state in React?
+
+  - to store and manage the changing data that affects the appearance/behavior of the UI (ex. logging into a website)
+
+- Why can't we just maintain state in a local variable?
+
+  - bc local variables don't trigger re-rendering of component to update the UI
 
 - What two actions happen when you call a `state setter` function?
 
-  -
+  - React makes note (memory) of the change in data
+  - at the next re-render, the page is updated with the new changes
 
-- ## When does the local `state variable` get updated with the new value?
+- When does the local `state variable` get updated with the new value?
+  - at the next render cycle
 
 ## Notes
 
@@ -25,6 +35,16 @@ State https://react.dev/learn/state-a-components-memory
 State as a Snapshot https://react.dev/learn/state-as-a-snapshot
 
 Conditional Rendering https://react.dev/learn/conditional-rendering
+
+---
+
+- the `setter` function does _not_ modify the `setter value`
+- The setter value changes during the next render cycle because state updates in React are batched and applied before the next render to improve performance and avoid unnecessary re-renders.
+- Note: When React runs in "Strict mode" (the default mode when using Create React App), when running in development React will call your component function twice, to help you find bugs. Log messages from the second render are displayed in light gray to help you identify them. In production, your component function will be called only once.
+  - this is why when you refresh the react app and check console, there's 6 logs of useState: false -- because we have 3 ToggleButtons in the app.js and react calls it twice
+- **Re-rendering** refers to the process in React where a component's JSX and associated logic are executed again to generate a new representation of the component's output based on updated state or prop values, resulting in potential updates to the rendered UI.
+
+---
 
 ### State: A Component's Memory
 
