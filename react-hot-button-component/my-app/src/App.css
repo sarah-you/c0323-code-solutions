@@ -1,0 +1,61 @@
+.App {
+  display: flex;
+  justify-content: center;
+}
+
+.button-wrap {
+  margin-top: 5rem;
+  box-shadow: 3px 3px 3px black;
+  border: 3px solid;
+}
+
+button {
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.25rem;
+}
+
+.btn-color-three {
+  background-color: #351c74;
+}
+
+.btn-color-six {
+  background-color: #674ea7;
+}
+
+.btn-color-nine {
+  background-color: #e06666;
+}
+
+.btn-color-twelve {
+  background-color: #f6b26a;
+}
+
+.btn-color-fifteen {
+  background-color: #ff0;
+}
+
+.btn-color-eighteen {
+  background-color: #fff;
+}
+
+.btn-color-max {
+  background-color: red;
+}
+
+.btn-color-three,
+.btn-color-six,
+.btn-color-nine {
+  color: white;
+}
+
+.btn-color-twelve,
+.btn-color-fifteen,
+.btn-color-eighteen,
+.btn-color-max {
+  color: black;
+}
+
+button:hover {
+  cursor: pointer;
+}
