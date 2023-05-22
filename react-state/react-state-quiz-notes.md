@@ -6,15 +6,20 @@ After completing this exercise, you should be able to discuss or answer the foll
 
 - What are _hooks_ in React?
 
-  - functions that allow you to use and manage state
+  - special react functions that allow you to use and manage state
+  - life cycle of a component: created, called, mounted to DOM, rendered, and unmouted (there are diff hooks used in each state)
 
 - What are the "Rules of Hooks"? (if necessary, re-read the "Pitfall" box in [State](https://react.dev/learn/state-a-components-memory))
 
   - you can only call it at the top level of component (like imports)
+  - must start with "use" followed by name with capital letter
+  - can't be called conditionally; must be called in same order
+  - react component or another hook are the only things that can call hooks
 
 - What is the purpose of state in React?
 
   - to store and manage the changing data that affects the appearance/behavior of the UI (ex. logging into a website)
+  - information that affects the visual display, it will be state's responsibility
 
 - Why can't we just maintain state in a local variable?
 
@@ -23,7 +28,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What two actions happen when you call a `state setter` function?
 
   - React makes note (memory) of the change in data
-  - at the next re-render, the page is updated with the new changes
+  - it triggers a re-render and at the next re-render, the page is updated React's local copy it has with the new changes
 
 - When does the local `state variable` get updated with the new value?
   - at the next render cycle
