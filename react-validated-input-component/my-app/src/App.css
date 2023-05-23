@@ -1,0 +1,18 @@
+.App {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+.pw-err {
+  color: red;
+}
+
+.pw-success {
+  color: green;
+}
+
+.pw-err,
+.pw-success {
+  font-weight: bold;
+}
