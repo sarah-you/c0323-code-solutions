@@ -1,0 +1,28 @@
+.App {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+}
+
+.pw-input {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.pw-err {
+  color: red;
+}
+
+.pw-success {
+  color: green;
+}
+
+.pw-err,
+.pw-success {
+  font-weight: bold;
+}
