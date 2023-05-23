@@ -14,7 +14,7 @@ export default function RegistrationFormControlled() {
     <div>
       <form method="post" onSubmit={handleSubmit}>
         <label>
-          Username{' '}
+          Username{''}
           <input
             value={username}
             onChange={(e) => setUsername(e.target.value)}
