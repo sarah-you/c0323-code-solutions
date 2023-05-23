@@ -13,10 +13,6 @@ After completing this exercise, you should be able to discuss or answer the foll
   - it allows dynamic rendering (as in adjust visuals based on change in data, allowing UI to update as data changes
   - if it's data driven, the react components can accept various inputs, which means the components will be reusable
 
-- Where in the component code would a list of React components typically be built?
-
-  - the main component code (app.js)
-
 - What `Array` method is commonly used to create a list of React components?
 
   - .map() method;
@@ -26,7 +22,7 @@ After completing this exercise, you should be able to discuss or answer the foll
   - to easily access data even when things are getting updated (deleted, reordered, etc.)
 
 - What is the best value to use as a "key" prop when rendering lists?
-  - database keys/Ids
+  - id as object properties
 
 ## Notes
 
@@ -318,6 +314,7 @@ Different sources of data provide different sources of keys:
 
 - **Keys must be unique among siblings.** However, it’s okay to use the same keys for JSX nodes in different arrays.
 - **Keys must not change** or that defeats their purpose! Don’t generate them while rendering.
+- **put your key in the outermost element (typically a `<div>`)**
 
 You might be tempted to use an item’s index in the array as its key. In fact, that’s what React will use if you don’t specify a `key` at all. But the order in which you render items will change over time if an item is inserted, deleted, or if the array gets reordered. Index as a key often leads to subtle and confusing bugs.
 
