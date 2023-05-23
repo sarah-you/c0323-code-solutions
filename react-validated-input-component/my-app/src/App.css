@@ -4,6 +4,16 @@
   margin-top: 10rem;
 }
 
+label {
+  display: flex;
+  flex-direction: row;
+}
+
+.pw-input {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
 .pw-err {
   color: red;
 }

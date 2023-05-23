@@ -6,16 +6,20 @@ export default function ValidatedInput() {
   const minLength = 8;
   let text;
   let pwClassName;
+  let insertSign;
 
   if (password.length === 0) {
     text = 'Please enter a password';
     pwClassName = 'pw-err';
+    insertSign = '❌';
   } else if (password.length < minLength) {
     text = 'Password must be 8 characters long';
     pwClassName = 'pw-err';
+    insertSign = '❌';
   } else {
-    text = '\u2713 You may use this password';
+    text = 'You may use this password';
     pwClassName = 'pw-success';
+    insertSign = '\u2713';
   }
 
   return (
@@ -23,12 +27,14 @@ export default function ValidatedInput() {
       <label className="password-label">
         Password
         <input
+          className="pw-input"
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <div className={pwClassName}>{text}</div>
+        <div className="sign">{insertSign}</div>
       </label>
+      <div className={pwClassName}>{text}</div>
     </div>
   );
 }
