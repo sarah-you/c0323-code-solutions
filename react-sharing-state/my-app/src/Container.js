@@ -10,21 +10,26 @@ import { useState } from 'react';
  */
 export default function Container({ items }) {
   const [current, setCurrent] = useState(0);
+
+  function handleClickPrev() {
+    setCurrent((current - 1 + items.length) % items.length);
+  }
+
+  function handleClickNext() {
+    setCurrent((current + 1) % items.length);
+  }
+
+  function handleClick(index) {
+    setCurrent(index);
+  }
+
   return (
     <div>
-      <div>{items[0]}</div>
+      <div>{items[current]}</div>
       <div>
-        <CustomButton
-          text="Prev"
-          isActive={current === 0}
-          onShow={() => setCurrent(0)}
-        />
-        <Indicators count={items.length} onSelect={() => setCurrent(0)} />
-        <CustomButton
-          text="Next"
-          isActive={current === 1}
-          onShow={() => setCurrent(1)}
-        />
+        <CustomButton text="Prev" onClick={handleClickPrev} />
+        <Indicators count={items.length} onClick={handleClick} />
+        <CustomButton text="Next" onClick={handleClickNext} />
       </div>
     </div>
   );
@@ -38,9 +43,9 @@ export default function Container({ items }) {
  * TODO: Make the background color a prop, default white.
  * TODO: When clicked, the parent needs to be notified.
  */
-function CustomButton({ text, onShow, color }) {
+function CustomButton({ text, onClick, backgroundColor }) {
   return (
-    <button onClick={onShow} style={{ backgroundColor: (color = 'white') }}>
+    <button onClick={onClick} style={{ backgroundColor }}>
       {text}
     </button>
   );
@@ -56,10 +61,17 @@ function CustomButton({ text, onShow, color }) {
  *       To avoid confusion, use `onSelect` for the event prop name.
  * TODO: Highlight the active indicator lightblue.
  */
-function Indicators({ count, onSelect }) {
+function Indicators({ count, current, onClick }) {
   const buttons = [];
   for (let i = 0; i < count; i++) {
-    buttons.push(<CustomButton key={i} text={i} />);
+    buttons.push(
+      <CustomButton
+        key={i}
+        text={i}
+        onClick={() => onClick(i)}
+        backgroundColor={i === current ? 'lightblue' : undefined}
+      />
+    );
   }
-  return <div onClick={onSelect}>{buttons}</div>;
+  return <div>{buttons}</div>;
 }
