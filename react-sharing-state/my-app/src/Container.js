@@ -28,7 +28,11 @@ export default function Container({ items }) {
       <div>{items[current]}</div>
       <div>
         <CustomButton text="Prev" onClick={handleClickPrev} />
-        <Indicators count={items.length} onClick={handleClick} />
+        <Indicators
+          count={items.length}
+          onClick={handleClick}
+          current={current}
+        />
         <CustomButton text="Next" onClick={handleClickNext} />
       </div>
     </div>
