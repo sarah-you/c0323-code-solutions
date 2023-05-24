@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+}
+
+.topics-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  border: gray solid 4px;
+  background-color: lightgray;
+}
+
+h1 {
+  padding: 1rem;
+}
+
+h1:hover {
+  cursor: pointer;
+}
+
+p {
+  font-size: 1.5rem;
+  color: black;
+}
