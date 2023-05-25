@@ -1,0 +1,48 @@
+.hidden {
+  display: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.row {
+  width: 60%;
+  align-items: center;
+}
+
+.col-full {
+  border: 5px solid black;
+  height: 70vh;
+}
+
+.carousel-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  align-items: center;
+}
+
+.l-arrow-wrap,
+.r-arrow-wrap {
+  font-size: 2rem;
+}
+
+.mid-col-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 20%;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rem;
+  justify-content: center;
+}
