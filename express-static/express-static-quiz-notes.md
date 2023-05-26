@@ -15,7 +15,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 
 - What are several examples of static files?
 
-  - index.html, styles.css, jpg images in 'public'
+  - index.html, styles.css, main. js, jpg images in 'public'
 
 - What is a good way to serve application images using Express?
   - using express.static() middleware
