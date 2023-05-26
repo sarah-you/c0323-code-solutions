@@ -24,7 +24,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 
 ### Set up basic Express `app`
 
-cd into the directory (`cd directory-name`)
+**MAKE SURE!!** cd into the directory (`cd directory-name`)
 
 add `package.json` (make sure the entry point (the "main" field) is server.js and the package type (the "type" field) is module):
 
@@ -43,6 +43,11 @@ install express:
 ```
 npm install express
 ```
+
+Check `pakcakge.json`:
+
+- dependency: express
+- devDependency: nodemon
 
 Add two scripts to `package.json` to start the server and to run it in development mode:
 
