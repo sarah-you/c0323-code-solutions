@@ -4,12 +4,12 @@ async function fetchData() {
       method: 'GET',
     });
     if (!response.ok) {
-      throw new Error('Request failed');
+      throw new Error(`Request failed ${response.status}`);
     }
-    const data = await response.json();
-    console.log(data);
+    const bulbasaur = await response.json();
+    console.log(bulbasaur);
   } catch (err) {
-    console.error(err, '404: an unexpected error occurred');
+    console.error('404: an unexpected error occurred', err);
   }
 }
 fetchData();

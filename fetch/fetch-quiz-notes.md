@@ -19,6 +19,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 
 - How does `fetch` report errors?
   - it resolves and sets the `ok` poperty to false
+  - if there's a network error, it will `throw` an error
 
 ## Notes
 
