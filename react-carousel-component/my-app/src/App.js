@@ -33,7 +33,7 @@ function App() {
             </div>
             <div className="mid-col-wrap">
               <div className="img-wrap">
-                <Image img={img} />
+                <Image img={img[current]} />
               </div>
               <div className="navBar">
                 <ProgressBar

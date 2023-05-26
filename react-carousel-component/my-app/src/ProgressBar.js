@@ -1,18 +1,10 @@
 import { FaCircle, FaRegCircle } from 'react-icons/fa';
 import Image from './Image';
 
-export default function ProgressBar({ img, count, onClick }) {
+export default function ProgressBar({ img, count, onClick, current }) {
   const circles = [];
   for (let i = 0; i < count; i++) {
-    circles.push(<Image key={i} text={i} onClick={() => onClick(i)} />);
+    circles.push(<FaRegCircle key={i} onClick={() => onClick(i)} />);
   }
-  return (
-    <div>
-      <FaCircle />
-      <FaRegCircle />
-      <FaRegCircle />
-      <FaRegCircle />
-      <FaRegCircle />
-    </div>
-  );
+  return <div>{circles}</div>;
 }
