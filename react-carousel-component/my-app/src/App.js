@@ -40,6 +40,7 @@ function App() {
                   img={img}
                   count={img.length}
                   onClick={handleClick}
+                  interval={handleClickNext}
                   current={current}
                 />
               </div>
