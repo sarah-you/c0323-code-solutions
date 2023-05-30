@@ -26,8 +26,6 @@ app.get('/api/grades', async (req, res, next) => {
     res.json(grades);
   } catch (err) {
     next(err);
-    console.error(err);
-    res.status(500).json({ error: 'an unexpected error occurred' });
   }
 });
 
@@ -52,8 +50,6 @@ app.post('/api/grades', async (req, res, next) => {
     res.status(201).json(newGrade);
   } catch (err) {
     next(err);
-    console.error(err);
-    res.status(500).json({ error: 'an unexpected error occurred' });
   }
 });
 
@@ -78,8 +74,6 @@ app.get('/api/grades/:gradeId', async (req, res, next) => {
     }
   } catch (err) {
     next(err);
-    console.error(err);
-    res.status(500).json({ error: 'an unexpected error occurred' });
   }
 });
 
@@ -112,8 +106,6 @@ app.put('/api/grades/:gradeId', async (req, res, next) => {
     }
   } catch (err) {
     next(err);
-    console.error(err);
-    res.status(500).json({ error: 'an unexpected error occurred' });
   }
 });
 
@@ -138,8 +130,6 @@ app.delete('/api/grades/:gradeId', async (req, res, next) => {
     }
   } catch (err) {
     next(err);
-    console.error(err);
-    res.status(500).json({ error: 'an unexpected error occurred' });
   }
 });
 
