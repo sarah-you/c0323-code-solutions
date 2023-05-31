@@ -51,22 +51,16 @@ app.post('/api/auth/sign-in', async (req, res, next) => {
     const params = [username];
     const result = await db.query(sql, params);
     const [user] = result.rows;
-    if (username) {
-      const providedPassword = password;
-      const isMatching = await argon2.verify(
-        user.hashedPassword,
-        providedPassword
-      );
-      if (!isMatching) {
-        throw new ClientError(401, 'invalid login');
-      } else {
-        const payload = {
-          userId: user.userId,
-          username: username,
-        };
-        const token = jwt.sign(payload, process.env.TOKEN_SECRET);
-        res.status(201).json({ payload, token });
-      }
+    const isMatching = await argon2.verify(user.hashedPassword, password);
+    if (!isMatching) {
+      throw new ClientError(401, 'invalid login');
+    } else {
+      const payload = {
+        userId: user.userId,
+        username: username,
+      };
+      const token = jwt.sign(payload, process.env.TOKEN_SECRET);
+      res.status(201).json({ payload, token });
     }
     /* your code starts here */
 
