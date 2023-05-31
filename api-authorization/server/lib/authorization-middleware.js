@@ -10,8 +10,9 @@ export function authMiddleware(req, res, next) {
   if (!result || !token) {
     throw new ClientError(401, 'authentication required');
   }
-  const verify = jwt.verify(token);
-  console.log(verify);
+  const payload = jwt.verify(token, process.env.TOKEN_SECRET);
+  req.user = payload;
+  next();
 }
 
 /*
