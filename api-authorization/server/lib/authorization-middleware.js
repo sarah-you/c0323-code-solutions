@@ -3,11 +3,8 @@ import jwt from 'jsonwebtoken';
 import { ClientError } from './client-error.js';
 
 export function authMiddleware(req, res, next) {
-  const result = req.get('Authorization');
-  console.log(result);
-  const token = result.split('Bearer ')[1];
-  console.log(token);
-  if (!result || !token) {
+  const token = req.get('Authorization')?.split('Bearer ')[1];
+  if (!token) {
     throw new ClientError(401, 'authentication required');
   }
   const payload = jwt.verify(token, process.env.TOKEN_SECRET);
