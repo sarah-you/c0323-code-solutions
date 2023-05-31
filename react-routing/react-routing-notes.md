@@ -57,12 +57,32 @@ https://github.com/remix-run/react-router/blob/dev/examples/basic/src/App.tsx
 
 ---
 
-#### Step 1: Wrap the `App` component in a `BrowserRouter` (inside index.js)
+#### Step 1: Wrap the `App` component in a `BrowserRouter` (index.js)
 
 https://reactrouter.com/en/main/routers/create-browser-router
 
-#### Step 2: Add routes to your App component (inside App.js)
+#### Step 2: Add routes to your App component (App.js)
+
+https://github.com/remix-run/react-router/blob/dev/examples/basic/src/App.tsx
 
 - index = "/" path
+- `App.js`: line 2-7, 12-19
 
-#### Step 3:
+#### Step 3: Update `<Header />` component (header.js)
+
+https://github.com/remix-run/react-router/blob/dev/examples/basic/src/App.tsx
+
+- import `Link` and `Outlet` from `react-router-dom`
+- add `<Link></Link>` components to the header elements with a `to` prop with desired path as value
+- render `<Outlet />` after the header elements
+
+- `Header.js`: line 2, 11-13, 16, 21
+- `NotFound.js`: line 1, 11
+
+#### Step 4: Update `Catalog` and `ProductDetails` components (Catalog.js, ProductDetails.js)
+
+https://reactrouter.com/en/main/start/overview#dynamic-segments
+
+- in `ProductDetails.js` the product ID can be retrieved from `react-router-dom via `useParams();`
+  - `Catalog.js`: line 5, 9, 48, 49, 57
+  - `ProductDetails.js`: 5, 9, 45-47
