@@ -8,6 +8,9 @@ An `<Outlet>` renders whatever child route is currently active,
 so you can think about this `<Outlet>` as a placeholder for
 the child routes we defined above.
 
+- placeholder for whatever component is child of the parent Route component
+- `<Outlet />` goes inside the Header.js (in our exercise example)
+
 # react-routing-notes
 
 React Router https://reactrouter.com/en/main/start/overview
@@ -61,11 +64,13 @@ https://github.com/remix-run/react-router/blob/dev/examples/basic/src/App.tsx
 
 https://reactrouter.com/en/main/routers/create-browser-router
 
+- `index.js`: line 6, 11-14
+
 #### Step 2: Add routes to your App component (App.js)
 
 https://github.com/remix-run/react-router/blob/dev/examples/basic/src/App.tsx
 
-- index = "/" path
+- Mainpage: index = "/" path
 - `App.js`: line 2-7, 12-19
 
 #### Step 3: Update `<Header />` component (header.js)

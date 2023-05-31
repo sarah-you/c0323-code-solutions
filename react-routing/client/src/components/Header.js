@@ -13,7 +13,9 @@ export default function Header(props) {
               </Link>
             </li>
             <li className="nav-item nav-link">
-              <Link to="/">Catalog</Link>
+              <Link to="/" className="title">
+                Catalog
+              </Link>
             </li>
           </ul>
         </div>
