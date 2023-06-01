@@ -6,8 +6,8 @@ import AppContext from '../components/AppContext';
 
 export default function Navbar() {
   /* TODO: Grab `user` and `handleSignOut` from `AppContext` */
-  const user = useContext(AppContext);
-  const handleSignOut = useContext(AppContext);
+  const { user } = useContext(AppContext);
+  const { handleSignOut } = useContext(AppContext);
 
   return (
     <div>

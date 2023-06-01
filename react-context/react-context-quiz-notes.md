@@ -16,11 +16,59 @@ After completing this exercise, you should be able to discuss or answer the foll
 
   - `createContext()` and wrap component with `Context.Provider`
 
-- ## How do you access the context values?
+- How do you access the context values?
+
+  - the parent component holds the value as the Context.Provider source and passes it to children as a prop
 
 - When would you use context? (in addition to the best answer: "rarely")
+  - when you need to share data between multiple components without passing props through all the levels of the component tree
+  - better to stick to using props to pass data within few levels deep of the component tree, bc the code can get more complex to understand and harder to decipher what data is being passed with context
 
 ## Notes
+
+In the exercise:
+
+- App.js:
+
+  - holds the `contextValue` in the `AppContext.Provider`, which is wrapping all the children routes
+
+  ```JavaScript
+  const contextValue = { user, token, handleSignIn, handleSignOut };
+
+  ```
+
+  - the top `AppContext.Provider` wrapper held the value of `contextValue` as a `value` prop
+
+  ```JavaScript
+    return (
+    <AppContext.Provider value={contextValue}>
+      <Routes>
+        <Route path="/" element={<NavBar />}>
+          <Route index element={<Home />} />
+          <Route path="sign-in" element={<Auth action="sign-in" />} />
+          <Route path="sign-up" element={<Auth action="sign-up" />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
+    </AppContext.Provider>
+  );
+  ```
+
+  - this allows the children components to use the contextValue data in its own components
+
+- `HomePage.js`: takes `{user}` contextValue and uses it via `useContext(AppContext)`
+- `NavBar.js`: takes `{user}`and `{handleSignOut}` and uses it via `useContext(AppContext)`
+- `AuthPage.js`: takes `{user}` and `{handleSignIn}` contextValue and uses it via `useContext(AppContext)`
+
+the AppContext.js file code:
+
+```JavaScript
+import { createContext } from 'react';
+
+const AppContext = createContext();
+export default AppContext;
+
+```
 
 ### UseContext
 
