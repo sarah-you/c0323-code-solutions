@@ -18,7 +18,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 
 - How do you access the context values?
 
-  - the parent component holds the value as the Context.Provider source and passes it to children as a prop
+  - useContext hook
 
 - When would you use context? (in addition to the best answer: "rarely")
   - when you need to share data between multiple components without passing props through all the levels of the component tree
