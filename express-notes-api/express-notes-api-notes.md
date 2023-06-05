@@ -13,6 +13,12 @@ Each note object has two properties: `id` and `content`
 
 ---
 
+### In `server.js` file
+
+- each method starts with error handling if statements, then moves on to the actual logic for each method's functionality, and ends with final error handling
+
+---
+
 For this exercise you are tasked with building a small Express server that performs Create, Read, Update, and Delete (CRUD) operations on a collection of notes.
 
 The notes are stored in a JSON file (though in a real-world application you would most likely store them in a database). Each note object has two properties: `id` and `content`. `id` is a positive integer and `content` is a string. Processing this file should follow a similar approach to that taken in the `node-notes-cli` exercise.
@@ -43,3 +49,17 @@ Error Status (for error handling)
 4. 403 Forbidden: The server understands the request but refuses to authorize it, indicating insufficient permissions.
 5. 404 Not Found: The requested resource could not be found on the server.
 6. 500 Internal Server Error: A generic server error occurred, indicating an unexpected condition that prevented the server from fulfilling the request.
+
+In Express.js, `sendStatus()` is a method to send a response with just the status code, while `status()` is a method to set the status code for the response.
+
+`sendStatus()` is useful when you only need to send the status code as a response, such as for simple acknowledgments, while `status()` is used to set the status code before sending a more complex response with additional data or headers.
+
+Example Response (Success) for `sendStatus(204)`
+
+```
+HTTP/1.1 204 No Content
+Connection: keep-alive
+Date: Mon, 23 Dec 2019 17:04:56 GMT
+ETag: W/"a-bAsFyilMr4Ra1hIU5PyoyFRunpI"
+X-Powered-By: Express
+```
