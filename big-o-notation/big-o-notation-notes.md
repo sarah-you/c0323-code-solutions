@@ -73,6 +73,7 @@ Some commonly seen Big O functions are (fastest-to-slowest):
 - `O(n^2)` Quadratic time. Slow for most tasks. Number of operations multiplied by `4` for each doubling of the input size `n`. Won't complete within a few seconds for any input size `n` greater than around `1 thousand` to `30 thousand`.
 
   - Examples: simplest comparison sorts (insertion, selection, bubble), comparing every combination of elements in two lists w/out optimization
+  - 2 nested loop
 
 - `O(2^n)` Exponential time. Extremely slow. Won't complete within a few seconds for any input size `n` greater than around `20` to `30`. Number of operations doubles for each additional input, and it becomes **astronomical** very quickly: any input size `n` greater than around `57` won't finish before the earth is engulfed by the sun.
 
