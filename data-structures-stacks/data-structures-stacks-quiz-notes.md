@@ -37,3 +37,7 @@ Often, stacks include additional helper operations that make them a bit easier t
 To use it effectively, you will want your terminal window to be somewhat tall. You can use the `f` key to tell Jest to only re-run the tests that are failing. This makes it easy to fix a test, save the file, make sure the test was really fixed, and then move to the next test.
 
 Note that with `start` and `test`, `npm` does not require the use of `run`. So `npm test` will run the tests.
+
+### Reminder
+
+A `while loop` is a control flow structure in programming that repeatedly executes a block of code as long as a specified condition remains true.
