@@ -13,7 +13,8 @@ After completing this exercise, you should be able to discuss or answer the foll
   - push(), pop(), peek ()
 
 - What must you do to access the value at an arbitrary point in a stack (not just the "top")?
-  - use a sep function to access the value in the stack (use loops)
+  - use a sep function to access the value in the stack
+  - use loops to pop values until you find the one you need
 
 ## Notes
 

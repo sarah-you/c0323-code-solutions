@@ -1,5 +1,5 @@
 export default function takeTop(stack) {
-  if (stack === '' || null) {
+  if (stack === undefined) {
     return undefined;
   } else {
     return stack.pop();
