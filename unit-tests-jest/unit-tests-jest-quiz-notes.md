@@ -28,3 +28,10 @@ https://smartbear.com/learn/automated-testing/what-is-unit-testing/
 
 Common Matchers (JEST)
 https://jestjs.io/docs/using-matchers
+
+---
+
+Good strategy to use when creating unit tests:
+
+- happy path first (how the test should work)
+- then list the edge cases (exceptions)
