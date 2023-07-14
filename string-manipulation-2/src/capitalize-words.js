@@ -1,13 +1,14 @@
 /* exported capitalizeWords */
 function capitalizeWords(string) {
-  let capWord = string[0].toUpperCase();
-  for (let i = 0; i < string.length; i++) {
-    if (string[i] === ' ') {
-      capWord += ' ' + string[i + 1].toUpperCase();
-      i++;
-    } else {
-      capWord += string[i].toLowerCase();
-    }
+  const words = string.split(' ');
+  const capWords = [];
+
+  for (let i = 0; i < words.length; i++) {
+    const word = words[i];
+    const capitalized =
+      word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+    capWords.push(capitalized);
   }
-  return capWord;
+
+  return capWords.join(' ');
 }
