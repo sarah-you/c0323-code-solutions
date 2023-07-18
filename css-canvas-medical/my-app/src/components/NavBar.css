@@ -1,0 +1,41 @@
+.nb-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.links-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.main-logo {
+  width: 8rem;
+  margin-top: 1rem;
+}
+
+.product-wrap,
+.implement-wrap,
+.about-wrap,
+.blog-wrap,
+.contact-wrap {
+  margin: 1rem;
+}
+
+.product,
+.implement,
+.about,
+.blog,
+.contact {
+  /* margin: 1rem; */
+  text-decoration: none;
+}
+
+.contact {
+  color: white;
+  background-color: #294463;
+  border-radius: 5px;
+  padding: .5rem;
+}
