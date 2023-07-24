@@ -41,10 +41,10 @@ export default function NavBar() {
               Contact Us
             </Link>
           </div>
-          <Outlet />
         </div>
       </div>
       <div className="nb-bar"></div>
+      <Outlet />
     </>
   );
 }

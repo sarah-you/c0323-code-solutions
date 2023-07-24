@@ -1,3 +1,54 @@
-.main-hero {
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.main-img-wrap {
+  margin: 3rem;
+  background-color: black;
   width: 70%;
+  height: 600px;
+  display: flex;
+}
+
+.main-hero {
+  width: 100%;
+  opacity: 0.8;
+}
+
+.hero-text-overlay-h1{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translate(-15%, -25%);
+  color: white;
+  width: 20%;
+  font-family: serif;
+  font-weight: 550;
+}
+
+.hero-text-overlay-p {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  transform: translate(-35%, -10%);
+  color: white;
+  padding: 30px;
+  width: 25%;
+  font-family: sans-serif;
+  margin: 0;
+  line-height: 1.75;
+}
+
+.main-cta-btn {
+  width: 10rem;
+  height: 3rem;
+  background-color: #294463;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  top: 60%;
+  left: 22%;
 }
